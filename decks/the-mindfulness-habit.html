@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《正念習慣：日復一日構建內心的平靜》（英）麗莎·雷恩 著｜麥肯錫 10 分鐘精華簡報（16 頁）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/deck.css" />
+</head>
+<body>
+  <!-- Top Toolbar -->
+  <header class="deck-topbar">
+    <div class="deck-left">
+      <a href="../index.html" class="btn-back-home">← 返回正念習慣知識庫</a>
+      <div class="deck-title-bar">
+        <span>MIND-01</span>《正念習慣：日復一日構建內心的平靜》（英）麗莎·雷恩 著 · 高小娟 譯 · 麥肯錫 10 分鐘導讀簡報
+      </div>
+    </div>
+
+    <div class="deck-controls">
+      <button type="button" class="timer-pill" id="timer-pill" title="點擊開始/暫停 10 分鐘計時（雙擊重置）">⏱ 10:00</button>
+      <span class="slide-counter" id="slide-counter">01 / 16</span>
+      <button type="button" class="ctrl-btn" id="btn-notes" title="快捷鍵 N">講稿 (N)</button>
+      <button type="button" class="ctrl-btn" id="btn-grid" title="快捷鍵 G">總覽/頁內搜尋 (G)</button>
+      <button type="button" class="ctrl-btn" id="btn-fs" title="快捷鍵 F">全螢幕 (F)</button>
+      <button type="button" class="ctrl-btn" id="btn-print" title="列印或匯出 PDF">列印 / PDF</button>
+    </div>
+  </header>
+
+  <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+
+  <!-- Navigation Arrows -->
+  <button type="button" class="nav-arrow nav-prev" id="btn-prev" aria-label="上一頁">‹</button>
+  <button type="button" class="nav-arrow nav-next" id="btn-next" aria-label="下一頁">›</button>
+
+  <!-- Main 16:9 Scaled Stage -->
+  <main class="stage-wrapper" id="stage-wrapper">
+    <div class="stage-scaler" id="stage-scaler">
+
+      <!-- ================================================================
+           SLIDE 01 : 封面 (COVER)
+           ================================================================ -->
+      <section class="slide slide-cover active"
+        data-kicker="COVER · 麥肯錫 10 分鐘精華導讀"
+        data-title="《正念習慣》：擺脫遠古自動駕駛，透過每日三軌微練習重奪注意力與內心平靜"
+        data-note-conclusion="這是一場 10 分鐘的結構化導讀：麗莎·雷恩結合個人從職場倦怠康復的經歷與 MBSR、MBCT、元認知及蘭格式正念，提供一套每日幾分鐘即可落地的八課習慣系統。"
+        data-note-evidence="來源為《正念習慣：日復一日構建內心的平靜》（作者〔英〕麗莎·雷恩 Lisa Wren，高小娟譯，人民郵電出版社，2026年10月，約110千字）。全書包含引言與八章（每章附一節實作課程與正念覺醒練習）。"
+        data-note-transition="進入細節前，先用一頁看懂本書融合的五大科學流派、三種實踐方法與八章邏輯骨架。">
+        <div class="cover-grid">
+          <div>
+            <div class="cover-tag">MINDFULNESS KNOWLEDGE HUB · MIND-01 · 10 MIN BRIEFING</div>
+            <h1 class="cover-title">正念習慣</h1>
+            <p class="cover-subtitle">日復一日構建內心的平靜（The Mindfulness Habit）</p>
+            <div class="cover-thesis">
+              明明下班卻停不下來、身體疲憊內心卻躁動？這並非不夠努力，而是大腦長期處於<strong>「自動駕駛模式」</strong>。本書將正念從抽象哲學轉化為日常習慣，從「應激反應」轉向「清醒選擇」。
+            </div>
+            <div class="cover-four-badges">
+              <div class="cover-badge"><strong>01 三軌實踐</strong><span>專注・覺察・覺醒</span></div>
+              <div class="cover-badge"><strong>02 習慣養成</strong><span>四步法・兩分鐘</span></div>
+              <div class="cover-badge"><strong>03 減壓心流</strong><span>STOP・直面・溝通</span></div>
+              <div class="cover-badge"><strong>04 穩定包容</strong><span>確定性悖論・DEI</span></div>
+            </div>
+            <div style="margin-top:24px;font-size:12.5px;color:rgba(255,255,255,0.68);display:flex;gap:14px;flex-wrap:wrap;">
+              <span>原著：〔英〕麗莎·雷恩（Lisa Wren）</span>
+              <span>｜</span>
+              <span>譯者：高小娟（2026 年 10 月版，110 千字）</span>
+              <span>｜</span>
+              <span>架構：8 章職場洞察 ＋ 8 課實作課程</span>
+            </div>
+          </div>
+
+          <div class="cover-book-mockup">
+            <img src="../assets/images/book-mindfulness-habit-cover.jpg" alt="《正念習慣：日復一日構建內心的平靜》重新繪製典藏封面插畫" />
+            <div class="cover-book-scrim"></div>
+            <div class="cover-book-top">
+              <div style="font-size:11px;letter-spacing:0.22em;color:#E0A84B;border-bottom:1px solid rgba(224,168,75,0.45);padding-bottom:6px;margin-bottom:12px;">THE MINDFULNESS HABIT</div>
+              <div style="font-family:'Noto Serif TC',serif;font-size:34px;font-weight:700;letter-spacing:0.08em;line-height:1.2;">正念習慣</div>
+              <div style="font-size:12.5px;color:rgba(255,255,255,0.84);letter-spacing:0.1em;margin-top:6px;">日復一日構建內心的平靜</div>
+            </div>
+            <div class="cover-book-bottom" style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,0.2);padding-top:12px;font-size:12.5px;">
+              <div><strong>〔英〕麗莎·雷恩</strong> 著</div>
+              <div style="color:#E0A84B;font-weight:700;">重繪典藏視覺</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 02 : 全書架構圖 (圖Ⅰ + 圖Ⅱ + 八章邏輯)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="01 · 全書架構圖（版型 4：連鎖論法）"
+        data-title="全書融合五大心理學流派與三軌實踐法，展開「破迷思 → 解過勞 → 化壓力 → 穩變局」八章課程"
+        data-note-conclusion="本書不是枯燥理論，而是一套經過同行評議的八課結構化職場正念課程，核心架構是「五大科學底層 × 三種日常練習路徑 × 四階段八章進階」。"
+        data-note-evidence="來源「引言」（圖Ⅰ、圖Ⅱ與本書結構）：融合積極心理學教練技術、正念認知療法（MBCT）、正念減壓療法（MBSR）、蘭格式主動覺察與威爾斯超然正念（元認知）。三種實踐方法為：專注練習（訓練大腦）、主動覺察（融入日常）、正念覺醒（打破例行習慣）。"
+        data-note-transition="在學會怎麼練之前，先看科學實證與四大正念定義，弄清楚正念到底能帶來什麼益處、又為何與傳統說教不同。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">01 · BOOK ARCHITECTURE · 全書科學底層與八章邏輯</span>
+            <span class="slide-pacing">建議節奏 00:40–01:20</span>
+          </div>
+          <h2 class="action-title">全書融合<em>五大流派與三軌實踐</em>，展開「覺察 → 減壓 → 心流 → 接納」八章課程</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="svg-box" style="flex:1;padding:12px 16px;">
+            <svg viewBox="0 0 1140 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m2-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                </marker>
+              </defs>
+
+              <!-- Top Layer: 圖Ⅰ 五大正念科學流派 -->
+              <text x="20" y="22" fill="#B4771E" font-size="12.5" font-weight="800" letter-spacing="1">底層理論融合（重繪原書 圖Ⅰ）</text>
+              <rect x="20" y="32" width="210" height="58" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <text x="125" y="56" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">積極心理學教練技術</text>
+              <text x="125" y="76" text-anchor="middle" fill="#64748B" font-size="11.5">平衡心理舒適與工作要求</text>
+
+              <rect x="242" y="32" width="210" height="58" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <text x="347" y="56" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">正念認知療法 MBCT</text>
+              <text x="347" y="76" text-anchor="middle" fill="#64748B" font-size="11.5">預防抑鬱症與反芻思維</text>
+
+              <rect x="464" y="32" width="210" height="58" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <text x="569" y="56" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">正念減壓療法 MBSR</text>
+              <text x="569" y="76" text-anchor="middle" fill="#64748B" font-size="11.5">喬·卡巴金八週減壓基石</text>
+
+              <rect x="686" y="32" width="210" height="58" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <text x="791" y="56" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">主動覺察（蘭格式）</text>
+              <text x="791" y="76" text-anchor="middle" fill="#64748B" font-size="11.5">無冥想日常視角更新</text>
+
+              <rect x="908" y="32" width="212" height="58" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <text x="1014" y="56" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">超然正念（元認知）</text>
+              <text x="1014" y="76" text-anchor="middle" fill="#64748B" font-size="11.5">威爾斯「無為策略」抽離念頭</text>
+
+              <!-- Middle Layer: 圖Ⅱ 三種正念實踐方法 -->
+              <rect x="20" y="108" width="1100" height="72" rx="10" fill="#0B1F3A"/>
+              <text x="42" y="132" fill="#E0A84B" font-size="12" font-weight="800" letter-spacing="1">三軌實踐方法（重繪原書 圖Ⅱ）｜唯一建議：每天練習幾分鐘，養成習慣</text>
+              <text x="42" y="160" fill="#FFFFFF" font-size="14" font-weight="700">① 專注練習（鍛鍊正念肌肉）</text>
+              <text x="275" y="160" fill="#CBD5E1" font-size="12.5">葡萄乾/掃描/靜坐</text>
+              <text x="420" y="160" fill="#E0A84B" font-size="14" font-weight="700">② 主動覺察（帶回當下生活）</text>
+              <text x="650" y="160" fill="#CBD5E1" font-size="12.5">日常事務非正式練習</text>
+              <text x="805" y="160" fill="#5EEAD4" font-size="14" font-weight="700">③ 正念覺醒（微改例行常規）</text>
+              <text x="1028" y="160" fill="#CBD5E1" font-size="12.5">新視角破慣性</text>
+
+              <!-- Bottom Layer: 4 Stages / 8 Chapters -->
+              <text x="20" y="208" fill="#0B1F3A" font-size="12.5" font-weight="800" letter-spacing="1">八章實戰推進骨架（Ch 1–8 ✕ Lesson 1–8）</text>
+
+              <!-- Stage 1 -->
+              <rect x="20" y="220" width="252" height="196" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <rect x="20" y="220" width="252" height="40" rx="10" fill="#1E4270"/>
+              <text x="146" y="245" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="700">階段一：奠基與習慣 (Ch1–2)</text>
+              <text x="36" y="286" fill="#0B1F3A" font-size="13.5" font-weight="700">破八大誤解 ✕ 觸發點習慣</text>
+              <text x="36" y="312" fill="#475569" font-size="12.5">• Ch1：澄清冥想迷思與期望光譜</text>
+              <text x="36" y="335" fill="#475569" font-size="12.5">• L1：注意力循環與葡萄乾冥想</text>
+              <text x="36" y="358" fill="#475569" font-size="12.5">• Ch2：四步培養法與兩分鐘法則</text>
+              <text x="36" y="381" fill="#0F766E" font-size="12.5" font-weight="600">• L2：思維列車站臺＆身體掃描</text>
+
+              <line x1="276" y1="318" x2="300" y2="318" stroke="#C88A2E" stroke-width="3" marker-end="url(#m2-arr)"/>
+
+              <!-- Stage 2 -->
+              <rect x="304" y="220" width="252" height="196" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <rect x="304" y="220" width="252" height="40" rx="10" fill="#1E4270"/>
+              <text x="430" y="245" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="700">階段二：解勞與安焦 (Ch3–4)</text>
+              <text x="320" y="286" fill="#0B1F3A" font-size="13.5" font-weight="700">抗耗竭漏斗 ✕ 斷安全行為</text>
+              <text x="320" y="312" fill="#475569" font-size="12.5">• Ch3：心理分離與滋養型活動</text>
+              <text x="320" y="335" fill="#475569" font-size="12.5">• L3：十一項態度與正念動態/愉悅</text>
+              <text x="320" y="358" fill="#475569" font-size="12.5">• Ch4：拆解「安全行為」焦慮迴圈</text>
+              <text x="320" y="381" fill="#0F766E" font-size="12.5" font-weight="600">• L4：壓力重定義與正念關懷</text>
+
+              <line x1="560" y1="318" x2="584" y2="318" stroke="#C88A2E" stroke-width="3" marker-end="url(#m2-arr)"/>
+
+              <!-- Stage 3 -->
+              <rect x="588" y="220" width="252" height="196" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+              <rect x="588" y="220" width="252" height="40" rx="10" fill="#C88A2E"/>
+              <text x="714" y="245" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="700">階段三：效能與溝通 (Ch5–6)</text>
+              <text x="604" y="286" fill="#0B1F3A" font-size="13.5" font-weight="700">步入心流 ✕ 化反饋威脅感</text>
+              <text x="604" y="312" fill="#475569" font-size="12.5">• Ch5：排除心流四大阻礙</text>
+              <text x="604" y="335" fill="#475569" font-size="12.5">• L5：從逃避轉向「直面」與元認知</text>
+              <text x="604" y="358" fill="#475569" font-size="12.5">• Ch6：13條工作假設＆STOP練習</text>
+              <text x="604" y="381" fill="#0F766E" font-size="12.5" font-weight="600">• L6：杏仁核劫持與正念溝通</text>
+
+              <line x1="844" y1="318" x2="868" y2="318" stroke="#C88A2E" stroke-width="3" marker-end="url(#m2-arr)"/>
+
+              <!-- Stage 4 -->
+              <rect x="872" y="220" width="248" height="196" rx="10" fill="#0B1F3A" stroke="#C88A2E" stroke-width="2"/>
+              <rect x="872" y="220" width="248" height="40" rx="10" fill="#132E52"/>
+              <text x="996" y="245" text-anchor="middle" fill="#E0A84B" font-size="14.5" font-weight="700">階段四：定力與包容 (Ch7–8)</text>
+              <text x="888" y="286" fill="#FFFFFF" font-size="13.5" font-weight="700">與變革共舞 ✕ 消除偏見</text>
+              <text x="888" y="312" fill="#CBD5E1" font-size="12.5">• Ch7：確定性悖論與學習蛻變</text>
+              <text x="888" y="335" fill="#CBD5E1" font-size="12.5">• L7：山嶽冥想與正念接納（非屈服）</text>
+              <text x="888" y="358" fill="#CBD5E1" font-size="12.5">• Ch8：覺察社會分類與無意識偏見</text>
+              <text x="888" y="381" fill="#5EEAD4" font-size="12.5" font-weight="600">• L8：「此處 vs 彼處」終身習慣</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">三軌實踐讓正念脫離「坐墊」，真正長進每天的通勤、會議與決策空檔</span>
+          <span class="page-num">02 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 03 : 引言與科學實證 (圖Ⅲ + 四大定義)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="02 · 引言：科學實證與核心定義（版型 1：對比＋證據）"
+        data-title="職場正念經兩項元分析與隨機對照試驗驗證，能雙向「提升幸福滿意」並「壓低壓力倦怠」"
+        data-note-conclusion="正念並非神秘玄學：它已被隨機對照試驗與元分析證明能帶來雙向職場效益，並獲英國國家醫療服務體系（NHS）與國家臨床規範研究所（NICE）採納。"
+        data-note-evidence="來源「引言」：圖Ⅲ職場正念益處出自「兩項針對隨機對照試驗的元分析」（註：具體年份、作者與樣本數原文未載）。英國 NICE 推薦正念用於治療抑鬱症與職場心理健康干預。四位核心學者為一行禪師、喬·卡巴金、艾倫·蘭格、阿德里安·威爾斯。"
+        data-note-transition="既然實證有效，為何多數人仍難跨出第一步？第一章將先掃清阻礙練習的八大誤解。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">02 · EVIDENCE & DEFINITIONS · 實證益處與權威定義</span>
+            <span class="slide-pacing">建議節奏 01:20–02:00</span>
+          </div>
+          <h2 class="action-title">職場正念經元分析與隨機對照試驗驗證，能雙向<em>放大正向幸福</em>並<em>降低壓力倦怠</em></h2>
+        </div>
+
+        <div class="slide-body grid-2-left">
+          <div class="svg-box">
+            <svg viewBox="0 0 460 410" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <text x="230" y="24" text-anchor="middle" fill="#0B1F3A" font-size="14.5" font-weight="800">職場正念的雙向實證益處（重繪原書 圖Ⅲ）</text>
+              <text x="230" y="42" text-anchor="middle" fill="#64748B" font-size="11.5">來源：兩項針對隨機對照試驗之元分析（具體樣本數原文未載）</text>
+
+              <!-- Upward Box -->
+              <rect x="24" y="64" width="194" height="248" rx="12" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+              <path d="M121,82 L145,112 L131,112 L131,134 L111,134 L111,112 L97,112 Z" fill="#0F766E"/>
+              <text x="121" y="158" text-anchor="middle" fill="#0F766E" font-size="15.5" font-weight="800">提升與改善</text>
+              <line x1="48" y1="172" x2="194" y2="172" stroke="#99F6E4" stroke-width="1.5"/>
+              <text x="48" y="202" fill="#0B1F3A" font-size="14.5" font-weight="700">● 幸福感</text>
+              <text x="48" y="232" fill="#0B1F3A" font-size="14.5" font-weight="700">● 睡眠質量</text>
+              <text x="48" y="262" fill="#0B1F3A" font-size="14.5" font-weight="700">● 自我與他人關懷</text>
+              <text x="48" y="292" fill="#0B1F3A" font-size="14.5" font-weight="700">● 工作滿意度</text>
+
+              <!-- Downward Box -->
+              <rect x="242" y="64" width="194" height="248" rx="12" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+              <path d="M339,134 L363,104 L349,104 L349,82 L329,82 L329,104 L315,104 Z" fill="#B91C1C"/>
+              <text x="339" y="158" text-anchor="middle" fill="#B91C1C" font-size="15.5" font-weight="800">減輕與降低</text>
+              <line x1="266" y1="172" x2="412" y2="172" stroke="#FECACA" stroke-width="1.5"/>
+              <text x="266" y="202" fill="#0B1F3A" font-size="14.5" font-weight="700">● 壓力負荷</text>
+              <text x="266" y="232" fill="#0B1F3A" font-size="14.5" font-weight="700">● 職業倦怠</text>
+              <text x="266" y="262" fill="#0B1F3A" font-size="14.5" font-weight="700">● 心理困擾</text>
+              <text x="266" y="292" fill="#0B1F3A" font-size="14.5" font-weight="700">● 焦慮反應</text>
+
+              <!-- Bottom institutional note -->
+              <rect x="24" y="330" width="412" height="64" rx="8" fill="#0B1F3A"/>
+              <text x="230" y="355" text-anchor="middle" fill="#E0A84B" font-size="12.5" font-weight="700">臨床與職場採納實證（英國）</text>
+              <text x="230" y="378" text-anchor="middle" fill="#FFFFFF" font-size="12">英國國家醫療服務體系（NHS）採納 · NICE 推薦用於抑鬱症與職場干預</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">FOUR FOUNDATIONAL DEFINITIONS · 四位大家對正念的核心界定</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>一行禪師：</strong>全身心投入當下，專心地做一件事（而非為了「趕緊做完」），回到真實生活。</li>
+                <li><strong>喬·卡巴金（MBSR）：</strong>「有目的地關注當下，而且<strong>不做評判</strong>」——以呼吸、聲音或身體動作作為錨定當下的「錨點」。</li>
+                <li><strong>艾倫·蘭格（無冥想正念）：</strong>不斷形成新視角、對新信息開放，對立面是固守舊經驗的「心不在焉」。</li>
+                <li><strong>阿德里安·威爾斯（超然正念）：</strong>對念頭、記憶與信念的靈活覺察——「當下的念頭僅是念頭，未必是事實」。如同拔河比賽中<strong>「鬆開繩子的無為策略」</strong>。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">4 COMMON BARRIERS · 破解初學者四大常見阻力</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>懷疑有用／沒時間：</strong>改從日常必做事務導入「主動覺察」，不額外佔時，留意微小變化但不強求分析。</li>
+                <li><strong>腦海想法停不下來：</strong>走神正是練習本體！大腦本來就不是為了「放空」而設計，拉回一次就鍛鍊一次。</li>
+                <li><strong>「冥想」很奇怪：</strong>不須長袍盤腿，睜眼端坐辦公桌即可；重點是為心靈留一個呼吸空間。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">正念不是推開或壓抑壞念頭的技巧，而是「鬆開與思維拔河的繩子」</span>
+          <span class="page-num">03 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 04 : 第一章 — 破除八大誤解與準備三要素 (圖1-1, 1-2, 1-3)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="03 · 第一章：入門準備（版型 2：對照破誤＋框架）"
+        data-title="練習正念須先破除「清空大腦、追求放鬆、自我提升」八大誤解，並錨定「態度・預期・意圖」"
+        data-note-conclusion="錯誤的預期會毀掉練習動力：正念不是宗教儀式、不是逼自己開心或強制放鬆，而是用「中間偏審慎」的態度與自身核心價值觀對齊。"
+        data-note-evidence="來源第一章「對正念的誤解」「為自己設定方向」「正念的態度」（圖1-1、圖1-2、圖1-3）及「自由寫作練習」（彼得·埃爾博 1973 年方法）。作者指出理想態度位於圖1-2連續譜「中間偏懷疑那邊一點」。"
+        data-note-transition="破除誤解、調校好心態後，第一課要帶我們直視大腦的「自動駕駛模式」，並展開第一個感官實作。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">03 · CHAPTER 1 · 入門準備與迷思破除</span>
+            <span class="slide-pacing">建議節奏 02:00–02:40</span>
+          </div>
+          <h2 class="action-title">入門須破除「清空大腦・強制放鬆」<em>八大誤解</em>，並校準<em>態度・預期・意圖</em>三要素</h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="mc-card navy-top" style="padding:14px 16px;">
+            <div class="card-label">8 MYTHS DEBUNKED · 第一章八大常見誤解澄清</div>
+            <table class="mc-table" style="font-size:12.2px;">
+              <thead>
+                <tr><th style="width:34%;">常見誤解</th><th>原書正念真相</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>1. 正念即冥想</strong></td><td>冥想僅是專注訓練之一，正念包含日常大量非靜坐實踐</td></tr>
+                <tr><td><strong>2. 特殊開悟狀態</strong></td><td>人人天生具備的自然能力，只是被日常慣性掩蓋</td></tr>
+                <tr><td><strong>3. 源於佛教宗教</strong></td><td>作為練習方法非宗教性質，本身是一項心智活動與技能</td></tr>
+                <tr><td><strong>4. 清空大腦／正思維</strong></td><td><strong>「去中心化覺察」</strong>：與念頭拉開距離，決定採用或捨棄</td></tr>
+                <tr><td><strong>5. 是一種放鬆技巧</strong></td><td>平靜不是練習前提；憤怒、無聊、高壓時都能練</td></tr>
+                <tr><td><strong>6. 自我提升迎合他人</strong></td><td>幫你靠近<strong>自己認同的價值觀</strong>，而非活成別人期待</td></tr>
+                <tr><td><strong>7. 能治癒有病的我們</strong></td><td>我們本身沒有「問題」，焦慮與緊張都是正常人類反應</td></tr>
+                <tr><td><strong>8. 時刻美妙享受</strong></td><td>仍會遇到心煩意亂，但擁有覺察並運用情緒的工具</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <!-- Top: 圖1-3 三角要素 -->
+              <text x="270" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">學習與準備三要素互動模型（重繪 圖1-3）</text>
+
+              <rect x="195" y="42" width="150" height="46" rx="8" fill="#0B1F3A"/>
+              <text x="270" y="70" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">態 度</text>
+
+              <rect x="42" y="136" width="150" height="46" rx="8" fill="#1E4270"/>
+              <text x="117" y="164" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">預 期</text>
+
+              <rect x="348" y="136" width="150" height="46" rx="8" fill="#0F766E"/>
+              <text x="423" y="164" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">意 圖</text>
+
+              <line x1="215" y1="92" x2="145" y2="132" stroke="#C88A2E" stroke-width="2.5"/>
+              <line x1="325" y1="92" x2="395" y2="132" stroke="#C88A2E" stroke-width="2.5"/>
+              <line x1="198" y1="159" x2="342" y2="159" stroke="#C88A2E" stroke-width="2.5"/>
+              <text x="270" y="122" text-anchor="middle" fill="#B4771E" font-size="11.5" font-weight="700">如太陽鏡濾鏡，主動選戴</text>
+
+              <!-- Middle: 圖1-2 正念態度連續譜 -->
+              <rect x="20" y="204" width="500" height="114" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="270" y="226" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">正念態度連續譜（重繪 圖1-2）</text>
+
+              <line x1="56" y1="264" x2="484" y2="264" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="56" cy="264" r="7" fill="#94A3B8"/>
+              <circle cx="484" cy="264" r="7" fill="#94A3B8"/>
+              <circle cx="322" cy="264" r="10" fill="#C88A2E" stroke="#FFFFFF" stroke-width="2.5"/>
+
+              <text x="42" y="248" fill="#475569" font-size="11.5">盲目樂觀：解決一切問題</text>
+              <text x="498" y="248" text-anchor="end" fill="#475569" font-size="11.5">徹底懷疑：肯定沒用</text>
+              <rect x="176" y="280" width="290" height="28" rx="6" fill="#FEF7E8" stroke="#E0A84B"/>
+              <text x="321" y="299" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">★ 最佳起點：「不確定是否有用，但盡力嘗試」</text>
+
+              <!-- Bottom: 圖1-1 ACT 價值觀導向 -->
+              <rect x="20" y="332" width="500" height="74" rx="10" fill="#FEF7E8" stroke="#E0A84B"/>
+              <text x="36" y="355" fill="#B4771E" font-size="12.5" font-weight="800">ACT 核心價值觀導向（重繪 圖1-1）｜練習不是「打卡任務」</text>
+              <text x="36" y="378" fill="#0B1F3A" font-size="12">以自由寫作（彼得·埃爾博，2分鐘）探索真實價值：創造力、關愛、聯結、平等、</text>
+              <text x="36" y="396" fill="#0B1F3A" font-size="12">自由、健康、勇氣、同理心，並把練習與早晨/午休等固定日常「綁定」，不拘場地。</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">以價值觀而非待辦指標作為前進方向，才能避免把正念變成另一種績效焦慮</span>
+          <span class="page-num">04 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 05 : 第一課 — 自動駕駛陷阱、注意力循環與葡萄乾冥想 (圖1-4)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="04 · 第一課：解鎖正念（版型 5：循環機制＋實作）"
+        data-title="「走神」不是失敗而是訓練本體——每次從自動駕駛拉回錨點，都在鍛鍊注意力肌肉（圖1-4）"
+        data-note-conclusion="大腦為節省有限資源而演化出「自動化（自動駕駛模式）」，但在複雜職場卻會演變成錯誤、機械化與管理者「控制陷阱」；葡萄乾練習證明感官體驗與大腦思考截然不同。"
+        data-note-evidence="來源「第一課：解鎖正念」：包含自動化八大後果、管理者「控制陷阱」（過度依賴微觀管理扼殺創新導致倦怠）、「兩分鐘呼吸練習」、「葡萄乾冥想練習」及「正念覺醒：覺察自動駕駛五信號」。"
+        data-note-transition="第一課喚醒了對「自動駕駛」的覺察，第二章進一步教我們如何用極低門檻將這份覺察養成不費力的日常習慣。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">04 · LESSON 1 · 注意力的正念循環與感官喚醒</span>
+            <span class="slide-pacing">建議節奏 02:40–03:15</span>
+          </div>
+          <h2 class="action-title">「走神」不是失敗而是訓練本體——每次從<em>自動駕駛</em>拉回錨點都在重塑注意力（圖1-4）</h2>
+        </div>
+
+        <div class="slide-body grid-2-left">
+          <div class="svg-box">
+            <svg viewBox="0 0 460 410" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m5-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#0B1F3A"/>
+                </marker>
+              </defs>
+              <text x="230" y="24" text-anchor="middle" fill="#0B1F3A" font-size="14.5" font-weight="800">注意力的正念循環圖（重繪原書 圖1-4）</text>
+
+              <!-- Cycle Nodes -->
+              <rect x="130" y="54" width="200" height="52" rx="10" fill="#0B1F3A"/>
+              <text x="230" y="85" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">注意力錨點（當下覺知）</text>
+
+              <rect x="255" y="198" width="175" height="50" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+              <text x="342" y="229" text-anchor="middle" fill="#B91C1C" font-size="15.5" font-weight="700">思緒游離（走神）</text>
+
+              <rect x="30" y="198" width="175" height="50" rx="10" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2"/>
+              <text x="117" y="229" text-anchor="middle" fill="#B4771E" font-size="15.5" font-weight="700">覺察（正念回歸）</text>
+
+              <!-- Arrows -->
+              <path d="M310,110 Q360,145 352,190" fill="none" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#m5-arr)"/>
+              <text x="385" y="145" text-anchor="middle" fill="#B91C1C" font-size="11.5" font-weight="700">無意識轉移</text>
+
+              <line x1="248" y1="223" x2="213" y2="223" stroke="#0B1F3A" stroke-width="2.5" marker-end="url(#m5-arr)"/>
+              <text x="230" y="268" text-anchor="middle" fill="#0F766E" font-size="12" font-weight="700">★ 覺察瞬間即成功</text>
+
+              <path d="M108,190 Q100,145 150,110" fill="none" stroke="#0F766E" stroke-width="2.5" marker-end="url(#m5-arr)"/>
+              <text x="72" y="145" text-anchor="middle" fill="#0F766E" font-size="11.5" font-weight="700">溫和拉回</text>
+
+              <!-- Autopilot Risks -->
+              <rect x="20" y="294" width="420" height="104" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="36" y="318" fill="#0B1F3A" font-size="13" font-weight="800">不受控「自動駕駛模式」的職場代價：</text>
+              <text x="36" y="340" fill="#475569" font-size="12">• 失誤率上升、盲從低效舊套路、思維陷入重複反芻</text>
+              <text x="36" y="360" fill="#475569" font-size="12">• 管理者落入「控制陷阱」：過度微觀管理 → 員工循規蹈矩</text>
+              <text x="36" y="380" fill="#B91C1C" font-size="12" font-weight="700">• 當常規失效時產生無力感 → 壓力滋生與職業倦怠（AI 更適合機械工作）</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card gold-top">
+              <div class="card-label">CLASSIC PRACTICE 1 · 兩分鐘練習 ＋ 葡萄乾冥想練習</div>
+              <h3 class="card-title">區分「思考葡萄乾」vs.「用感官直接覺察」</h3>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>兩分鐘呼吸錨點：</strong>感受鼻腔進出與胸腹起伏；冒出「我做不好」「好無聊」評分念頭時不予干涉，溫和拉回。</li>
+                <li><strong>葡萄乾全感官五步：</strong>① 看褶皺紋路 → ② 捏外皮軟硬觸覺 → ③ 聞氣味 → ④ 放舌上覺察唾液與咀嚼衝動 → ⑤ 吞嚥餘味。</li>
+                <li><strong>學員共通頓悟：</strong>「我原本邊看邊急著吃完，這和我對待工作只求趕快結束下一件一模一樣！」</li>
+              </ul>
+            </div>
+
+            <div class="mc-card teal-top">
+              <div class="card-label">MINDFUL AWAKENING · 第一課覺醒：抓出自動駕駛五信號</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li>① 執行重複常規活動時　② 「做這件事，腦想另一件事」時</li>
+                <li>③ 走神時　④ 回想任務細節卻記憶模糊時（如開車開錯路）</li>
+                <li>⑤ 本想做 A 卻不知不覺做起 B 時 —— 帶著溫和好奇喚醒感官！</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">每週每天短練習，把注意力從「大腦裡的自動腳本」轉回「真實鮮活的此刻」</span>
+          <span class="page-num">05 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 06 : 第二章 & 第二課 — 四步習慣培養法、思維列車與身體掃描
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="05 · 第二章 & 第二課：建立習慣與破繭而出（版型 3：流程＋隱喻）"
+        data-title="用「日常觸發點 × 四步法 × 兩分鐘法則」嵌入現有作息，再藉「身體掃描」下車「思維列車」"
+        data-note-conclusion="建立正念習慣無須另找空檔：只要將「正念鈴聲」綁定現有日常觸發點，並嚴格遵守克利爾的「兩分鐘法則（只練兩分鐘就停）」，即可克服害怕失敗與沒時間阻力。"
+        data-note-evidence="來源第二章與第二課：綜合威廉姆斯＆彭曼「正念鈴聲」、詹姆斯·克利爾《原子習慣》「兩分鐘法則」與蘭格「主動覺察」（表2-1）；第二課解析大腦遠古求生六程序、思維列車站臺比喻與「身體掃描練習」。"
+        data-note-transition="建立習慣與身體覺察後，第三章將處理現代職場最棘手的系統難題：永無止境的工作與「隨時待命」文化腳本。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">05 · CH 2 & LESSON 2 · 習慣迴路、思維列車與身體掃描</span>
+            <span class="slide-pacing">建議節奏 03:15–03:55</span>
+          </div>
+          <h2 class="action-title">藉<em>四步習慣法 × 兩分鐘法則</em>嵌入日常，並以「身體掃描」下車<em>思維列車</em></h2>
+        </div>
+
+        <div class="slide-body grid-2-wide">
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="svg-box" style="flex:1;padding:12px;">
+              <svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <defs>
+                  <marker id="m6-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                    <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                  </marker>
+                </defs>
+                <text x="12" y="20" fill="#0B1F3A" font-size="13.5" font-weight="800">四步正念習慣培養法（融合 威廉姆斯鈴聲 × 《原子習慣》兩分鐘法則 × 蘭格主動覺察）</text>
+
+                <rect x="12" y="34" width="150" height="114" rx="8" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+                <text x="87" y="56" text-anchor="middle" fill="#1E4270" font-size="12.5" font-weight="800">STEP 1 選定情境</text>
+                <text x="22" y="78" fill="#334155" font-size="11.5">挑具體日常必做事件</text>
+                <text x="22" y="96" fill="#334155" font-size="11.5">如「坐上餐桌吃晚餐」</text>
+                <text x="22" y="114" fill="#334155" font-size="11.5">而非空泛「吃飯時」</text>
+                <text x="22" y="134" fill="#0F766E" font-size="11" font-weight="700">融入第一章價值觀</text>
+
+                <line x1="165" y1="91" x2="181" y2="91" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#m6-arr)"/>
+
+                <rect x="184" y="34" width="150" height="114" rx="8" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+                <text x="259" y="56" text-anchor="middle" fill="#1E4270" font-size="12.5" font-weight="800">STEP 2 設觸發點</text>
+                <text x="194" y="78" fill="#334155" font-size="11.5">把排隊、爬樓梯、散步</text>
+                <text x="194" y="96" fill="#334155" font-size="11.5">或重要會議前視為</text>
+                <text x="194" y="114" fill="#334155" font-size="11.5">「正念鈴聲」喚醒時刻</text>
+                <text x="194" y="134" fill="#0F766E" font-size="11" font-weight="700">零額外時間成本</text>
+
+                <line x1="337" y1="91" x2="353" y2="91" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#m6-arr)"/>
+
+                <rect x="356" y="34" width="150" height="114" rx="8" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+                <text x="431" y="56" text-anchor="middle" fill="#1E4270" font-size="12.5" font-weight="800">STEP 3 全感官投入</text>
+                <text x="366" y="78" fill="#334155" font-size="11.5">感知動靜、溫度、聲音</text>
+                <text x="366" y="96" fill="#334155" font-size="11.5">與身體接觸；走神就</text>
+                <text x="366" y="114" fill="#334155" font-size="11.5">溫和拉回感官體驗</text>
+                <text x="366" y="134" fill="#0F766E" font-size="11" font-weight="700">具泛化效應擴散全天</text>
+
+                <line x1="509" y1="91" x2="525" y2="91" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#m6-arr)"/>
+
+                <rect x="528" y="34" width="140" height="114" rx="8" fill="#0B1F3A"/>
+                <text x="598" y="56" text-anchor="middle" fill="#E0A84B" font-size="12.5" font-weight="800">STEP 4 感恩獎勵</text>
+                <text x="538" y="78" fill="#FFFFFF" font-size="11.5">體會參與感與放鬆</text>
+                <text x="538" y="96" fill="#FFFFFF" font-size="11.5">打斷無休止擔憂計畫</text>
+                <text x="538" y="114" fill="#CBD5E1" font-size="11.5">享受感讓人自然重複</text>
+                <text x="538" y="134" fill="#5EEAD4" font-size="11" font-weight="700">習慣自然成形</text>
+
+                <!-- Two minute rule banner -->
+                <rect x="12" y="164" width="656" height="56" rx="8" fill="#FEF7E8" stroke="#E0A84B"/>
+                <text x="26" y="187" fill="#B4771E" font-size="12.5" font-weight="800">★ 兩分鐘法則（克利爾）＋ 克服害怕失敗：</text>
+                <text x="320" y="187" fill="#0B1F3A" font-size="12.5" font-weight="700">嚴格規定只練 2 分鐘就必須停止（有負擔就 1 分鐘）！</text>
+                <text x="26" y="207" fill="#475569" font-size="11.5">只關注「當下這一次」而非未來要練幾次；搭配倒水、開飛航模式作為練習前小儀式。</text>
+              </svg>
+            </div>
+
+            <div class="mc-card" style="padding:12px 16px;">
+              <div class="card-label">TABLE 2-1 · 日常觸發點覺知矩陣（節選）</div>
+              <table class="mc-table" style="font-size:11.8px;">
+                <thead><tr><th>觸發點</th><th>主動覺察動作</th><th>滿足需求 ➔ 感知體驗</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>排隊／爬樓梯</strong></td><td>看周圍、聽聲音、感受腳踩地面與身體移動</td><td>緩解無聊緊繃 ➔ 放慢節奏、釋放緊張</td></tr>
+                  <tr><td><strong>半夜工作驚醒</strong></td><td>察覺胡思亂想，把注意力轉向感官與外在</td><td>放下執念休息 ➔ 平靜接納、重新入睡</td></tr>
+                  <tr><td><strong>重要彙報／會議前</strong></td><td>覺察身心壓力，暫停片刻保持正念</td><td>專注與穩定性 ➔ 換角看問題、轉壓力為動力</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">LESSON 2 · 大腦求生濾鏡與「思維列車」隱喻</div>
+              <p style="margin:0 0 8px;font-size:13px;color:#334155;">大腦演化把<strong>生存放首位</strong>（時刻警覺威脅、預測負面、極敏感是否被群體排斥），導致面對挑戰時想法只是一種片面猜測。</p>
+              <div class="callout-gold" style="margin:6px 0;">
+                <strong>🚆 我的思維列車：</strong>想法像一節節車廂駛過。無意識時我們會跳上車跟隨煩惱狂奔；正念讓我們<strong>退回站臺</strong>，看著想法經過而不被拖走。
+              </div>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">BODY SCAN · 第二課專注練習：身體掃描</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>為何掃描身體：</strong>思緒可在過去未來奔馳，但<strong>身體感受只能存在於此時此刻</strong>，是永不缺席的錨點。</li>
+                <li><strong>聚光燈順序：</strong>外緣皮膚 → 雙腳腳趾 → 小腿膝蓋 → 大腿臀腰 → 腹胸潮汐 → 背肩雙臂 → 頭面眉心 → 全身呼吸流動。</li>
+                <li><strong>第二課覺醒：</strong>觀察自己對練習與會議帶了多少「預先假設」，練習放下標籤再看一次。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">從「站在山頂俯瞰全局」到「回到身體直接體驗」，自我設限的念頭就會失去控制力</span>
+          <span class="page-num">06 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 07 : 第三章 — 隨時待命文化腳本與耗竭漏斗 (圖3-1, 3-2, 表3-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="06 · 第三章：永無止境的工作（版型 6：因果漏斗＋破局清單）"
+        data-title="盲從「隨時待命」文化腳本會令人滑入「耗竭漏斗」；須以「工作心理分離」與滋養清單逆轉"
+        data-note-conclusion="下班仍盯著工作訊息不是敬業，而是遵循「卡尼曼第一類思維（文化腳本）」造成的慢性耗竭；忙碌時人們常先砍掉滋養活動，加速生產力下滑惡性循環。"
+        data-note-evidence="來源第三章：引入丹尼爾·卡尼曼《思考，快與慢》第一類思維解釋「文化腳本」；瑪麗·奧斯伯格（Marie Åsberg）博士「耗竭漏斗」（圖3-1）；缺乏「工作心理分離」惡性循環（圖3-2）；表3-1 滋養型與消耗型活動分析。"
+        data-note-transition="切斷消耗後，第三課將進一步引入 11 項正念態度，並教我們用「正念動態」與「練習愉悅」主動補回內在能量。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">06 · CHAPTER 3 · 隨時待命陷阱、耗竭漏斗與正念破局</span>
+            <span class="slide-pacing">建議節奏 03:55–04:35</span>
+          </div>
+          <h2 class="action-title">盲從「隨時待命」文化腳本會滑入<em>耗竭漏斗</em>；須靠「工作心理分離」與滋養清單逆轉</h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m7-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#B91C1C"/>
+                </marker>
+              </defs>
+              <!-- Top Half: 圖3-1 耗竭漏斗 -->
+              <text x="270" y="20" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">漸進式滑落：奧斯伯格博士「耗竭漏斗」（重繪 圖3-1）</text>
+
+              <ellipse cx="270" cy="48" rx="170" ry="12" fill="none" stroke="#1E4270" stroke-width="2.5"/>
+              <ellipse cx="270" cy="68" rx="140" ry="10" fill="none" stroke="#334155" stroke-width="2.5"/>
+              <ellipse cx="270" cy="88" rx="110" ry="9" fill="none" stroke="#B4771E" stroke-width="2.5"/>
+              <ellipse cx="270" cy="108" rx="80" ry="8" fill="none" stroke="#C88A2E" stroke-width="2.5"/>
+              <ellipse cx="270" cy="128" rx="52" ry="7" fill="none" stroke="#B91C1C" stroke-width="2.5"/>
+              <ellipse cx="270" cy="146" rx="28" ry="6" fill="#B91C1C"/>
+
+              <text x="72" y="64" text-anchor="end" fill="#334155" font-size="12" font-weight="700">睡眠問題</text>
+              <text x="72" y="92" text-anchor="end" fill="#B4771E" font-size="12" font-weight="700">疼痛與不適</text>
+              <text x="72" y="122" text-anchor="end" fill="#B91C1C" font-size="12" font-weight="700">喪失愉悅感</text>
+
+              <text x="468" y="64" fill="#334155" font-size="12" font-weight="700">能量匱乏</text>
+              <text x="468" y="92" fill="#B4771E" font-size="12" font-weight="700">愧疚感</text>
+              <text x="468" y="122" fill="#B91C1C" font-size="12" font-weight="700">情緒低落</text>
+              <text x="270" y="172" text-anchor="middle" fill="#B91C1C" font-size="14" font-weight="800">▼ 徹底疲憊（精疲力竭・效能低下・憤世嫉俗）</text>
+
+              <!-- Bottom Half: 圖3-2 職業倦怠惡性循環 -->
+              <line x1="20" y1="190" x2="520" y2="190" stroke="#E2E8F0" stroke-width="1.5"/>
+              <text x="270" y="212" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">缺乏「工作心理分離」的倦怠惡性循環（重繪 圖3-2）</text>
+
+              <circle cx="270" cy="312" r="48" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+              <text x="270" y="308" text-anchor="middle" fill="#B91C1C" font-size="12.5" font-weight="800">職業倦怠</text>
+              <text x="270" y="326" text-anchor="middle" fill="#B91C1C" font-size="12.5" font-weight="800">風險飆升</text>
+
+              <!-- 5 outer nodes -->
+              <rect x="200" y="224" width="140" height="34" rx="17" fill="#0B1F3A"/>
+              <text x="270" y="245" text-anchor="middle" fill="#FFFFFF" font-size="11.5" font-weight="700">繁重工作／壓力緊張</text>
+
+              <rect x="374" y="274" width="146" height="38" rx="10" fill="#F8FAFC" stroke="#475569"/>
+              <text x="447" y="297" text-anchor="middle" fill="#0B1F3A" font-size="11.5" font-weight="700">工作心理分離不足</text>
+
+              <rect x="330" y="366" width="146" height="36" rx="10" fill="#F8FAFC" stroke="#475569"/>
+              <text x="403" y="389" text-anchor="middle" fill="#0B1F3A" font-size="11.5" font-weight="700">無法有效恢復</text>
+
+              <rect x="64" y="366" width="146" height="36" rx="10" fill="#F8FAFC" stroke="#475569"/>
+              <text x="137" y="389" text-anchor="middle" fill="#0B1F3A" font-size="11.5" font-weight="700">認知資源匱乏</text>
+
+              <rect x="20" y="274" width="146" height="38" rx="10" fill="#F8FAFC" stroke="#475569"/>
+              <text x="93" y="297" text-anchor="middle" fill="#0B1F3A" font-size="11.5" font-weight="700">生產力下降・出錯</text>
+
+              <path d="M346,244 L388,270" fill="none" stroke="#B91C1C" stroke-width="2" marker-end="url(#m7-arr)"/>
+              <path d="M447,316 L430,360" fill="none" stroke="#B91C1C" stroke-width="2" marker-end="url(#m7-arr)"/>
+              <path d="M324,384 L216,384" fill="none" stroke="#B91C1C" stroke-width="2" marker-end="url(#m7-arr)"/>
+              <path d="M110,360 L93,318" fill="none" stroke="#B91C1C" stroke-width="2" marker-end="url(#m7-arr)"/>
+              <path d="M150,270 L194,244" fill="none" stroke="#B91C1C" stroke-width="2" marker-end="url(#m7-arr)"/>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">CULTURAL SCRIPTS · 為什麼我們放不下工作？</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>文化腳本（卡尼曼第一類思維）：</strong>群體將「忙碌、加班、隨時在線」當成榮譽勳章，令人不經批判思考便陷入「跑步機／倉鼠輪」。</li>
+                <li><strong>現實檢驗：</strong>時間變長只換來在更長工時完成同樣工作量；對健康損害是漸進式的，讓人忘記精力充沛時的自己。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">BREAKTHROUGH · 正念破局：滋養型 vs. 消耗型活動三步盤點（表3-1）</div>
+              <ul class="mc-list">
+                <li><strong>第一步（拆解）：</strong>列出每日與工作分解後的大小事項。</li>
+                <li><strong>第二步（分類）：</strong>標記為「滋養型 / 中性滋養」或「消耗型 / 中性消耗」。</li>
+                <li><strong>第三步（覺察陷阱）：</strong>人們一忙碌，往往<strong>最先砍掉滋養活動</strong>（聚會、運動、興趣），只留下消耗活動！</li>
+              </ul>
+              <div class="callout-gold">
+                <strong>扭轉原則：</strong>不需推翻現有生活！只要每天或每週刻意保留微小的「滋養小習慣」，並對下班冒出的反芻念頭保持主動覺察，就能重建控制感。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">加班不是禁忌，重點是區分「深思熟慮的策略選擇」與「無意識隨波逐流」</span>
+          <span class="page-num">07 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 08 : 第三課 — 11項正念態度、正念動態與練習愉悅 (表3-2)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="07 · 第三課：身心合一地工作（版型 3：態度矩陣＋能量蓄積）"
+        data-title="壓力會窄化視野並屏蔽快樂；須以「十一項正念態度」為濾鏡，靠動態與愉悅練習為心理蓄能"
+        data-note-conclusion="正念態度就像太陽鏡的濾鏡，能改變我們體驗世界的方式；在忙碌中練習「正念動態」與「練習愉悅」，不是逃避壓力，而是積累抗壓資源。"
+        data-note-evidence="來源「第三課：身心合一地工作」：表3-2 列出研究中常見的 11 項正念態度（不評判、耐心、開放、新手心態、信任、不強求、接納、好奇、放下、感恩、慷慨）；提出「愉快回憶日曆」、克服「錯失恐懼症（FOMO）」與「上學的路」案例，並附「正念動態練習」「練習愉悅」。"
+        data-note-transition="學會滋養身心與品味愉悅後，第四章要帶我們直搗現代人最困擾的兩大情緒：焦慮與擔憂。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">07 · LESSON 3 · 十一項正念態度與愉悅蓄能</span>
+            <span class="slide-pacing">建議節奏 04:35–05:10</span>
+          </div>
+          <h2 class="action-title">以<em>十一項正念態度</em>重塑認知濾鏡，並藉「動態與愉悅練習」積累抗壓資源</h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <text x="270" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">十一項核心正念態度圖譜（重繪原書 表3-2）</text>
+
+              <!-- Bucket 1: 接納與中立 -->
+              <rect x="16" y="38" width="508" height="118" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+              <rect x="16" y="38" width="124" height="118" rx="10" fill="#1E4270"/>
+              <text x="78" y="92" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="800">中立接納</text>
+              <text x="78" y="112" text-anchor="middle" fill="#CBD5E1" font-size="11.5">鬆開對抗</text>
+              <text x="156" y="64" fill="#0B1F3A" font-size="12.5" font-weight="700">• 不評判：</text><text x="232" y="64" fill="#475569" font-size="12">退後一步保持中立，看見自動評判但不起舞</text>
+              <text x="156" y="91" fill="#0B1F3A" font-size="12.5" font-weight="700">• 接　納：</text><text x="232" y="91" fill="#475569" font-size="12">如實承認現狀（非屈服），是真正改變的第一步</text>
+              <text x="156" y="118" fill="#0B1F3A" font-size="12.5" font-weight="700">• 放　下：</text><text x="232" y="118" fill="#475569" font-size="12">看見緊抓不放的無益思維模式，卸下沉重包袱</text>
+              <text x="156" y="143" fill="#0B1F3A" font-size="12.5" font-weight="700">• 不強求：</text><text x="232" y="143" fill="#475569" font-size="12">不急著分析或修復，回到「存在狀態」做自己</text>
+
+              <!-- Bucket 2: 探索與開放 -->
+              <rect x="16" y="168" width="508" height="118" rx="10" fill="#F8FAFC" stroke="#C88A2E" stroke-width="1.5"/>
+              <rect x="16" y="168" width="124" height="118" rx="10" fill="#C88A2E"/>
+              <text x="78" y="222" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="800">開放探索</text>
+              <text x="78" y="242" text-anchor="middle" fill="#FEF7E8" font-size="11.5">打破濾鏡</text>
+              <text x="156" y="194" fill="#0B1F3A" font-size="12.5" font-weight="700">• 開　放：</text><text x="232" y="194" fill="#475569" font-size="12">察覺舒適區邊界，樂於接納新事物與新資訊</text>
+              <text x="156" y="221" fill="#0B1F3A" font-size="12.5" font-weight="700">• 新手心態：</text><text x="232" y="221" fill="#475569" font-size="12">放下「已知」過往經驗濾鏡，如第一次見到般看待</text>
+              <text x="156" y="248" fill="#0B1F3A" font-size="12.5" font-weight="700">• 好　奇：</text><text x="232" y="248" fill="#475569" font-size="12">帶驚奇與興趣探索，也懂得何時讓念頭隨風而去</text>
+              <text x="156" y="275" fill="#0B1F3A" font-size="12.5" font-weight="700">• 信　任：</text><text x="232" y="275" fill="#475569" font-size="12">你才是自己生活經歷的專家，建立對內在直覺的信任</text>
+
+              <!-- Bucket 3: 節奏與善意 -->
+              <rect x="16" y="298" width="508" height="108" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="1.5"/>
+              <rect x="16" y="298" width="124" height="108" rx="10" fill="#0F766E"/>
+              <text x="78" y="346" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="800">節奏善意</text>
+              <text x="78" y="366" text-anchor="middle" fill="#CCFBF1" font-size="11.5">自我滋養</text>
+              <text x="156" y="328" fill="#0B1F3A" font-size="12.5" font-weight="700">• 耐　心：</text><text x="232" y="328" fill="#475569" font-size="12">萬物皆有自己的節奏——強求與催促反而無用</text>
+              <text x="156" y="357" fill="#0B1F3A" font-size="12.5" font-weight="700">• 感　恩：</text><text x="232" y="357" fill="#475569" font-size="12">練習感恩與欣賞，能切實改善我們當下的情緒</text>
+              <text x="156" y="386" fill="#0B1F3A" font-size="12.5" font-weight="700">• 慷　慨：</text><text x="232" y="386" fill="#475569" font-size="12">無法從空杯倒水！先對自己友善，再傳遞善意給他人</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">LESSON 3 PRACTICE A · 正念動態練習（打破「持續運轉」）</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>山式站姿 ➔ 左右擺動：</strong>感受重心從一隻腳移到另一隻腳的細微平衡調整。</li>
+                <li><strong>伸展不過度原則：</strong>雙臂上舉與側彎時，特意覺察「有沒有超出舒適範圍、勉強發力」——這正映照工作中的過度硬撐！</li>
+              </ul>
+            </div>
+
+            <div class="mc-card gold-top" style="flex:1;">
+              <div class="card-label">LESSON 3 PRACTICE B · 練習愉悅 & 愉快回憶日曆</div>
+              <ul class="mc-list">
+                <li><strong>為何快樂總被漏掉：</strong>大腦在壓力下會優先處理威脅，微小的愉悅（陽光、咖啡香、孩子笑容）在認知權重上根本搶不贏焦慮。</li>
+                <li><strong>訓練方法：</strong>回憶一個微小美好畫面，覺察胸口暖意或嘴角上揚，辨識其背後的價值需求（自由、創造、聯結）。</li>
+                <li><strong>反轉 FOMO 與趕路：</strong>快樂不是奢侈品而是恢復內在資源的<strong>必需品</strong>；作者提前五分鐘收手機陪孩子走「上學的路」，爭吵瞬間減少。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">發現美好不是為了逃避壓力，而是為大腦預先儲備應對風浪的韌性資源</span>
+          <span class="page-num">08 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 09 : 第四章 — 焦慮機制、安全行為陷阱與 8 個緩解技巧
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="08 · 第四章：緩解焦慮（版型 2：機制拆解＋工具箱）"
+        data-title="擔憂與「迴避、尋求確認、預演、威脅監控」四大安全行為，才是放大焦慮的真正引擎"
+        data-note-conclusion="焦慮與壓力本身是保護性的正常反應；真正讓我們深陷痛苦的，是「萬一……」的擔憂策略以及四大「安全行為」，它們為恐懼提供了「確有危險」的假證據。"
+        data-note-evidence="來源第四章「緩解焦慮」：區分情緒反應（焦慮）、情境即時反應（壓力）與適應不良應對策略（擔憂）；列舉四大安全行為與職場變體（過度加班/製造混亂保住職位）；提供「允許存在」「埃克哈特·託利集中呼吸一次」「外化注意力」「放慢速度」等 8 個技巧。"
+        data-note-transition="看穿安全行為如何放大焦慮後，第四課將更進一步拆解壓力的七大關鍵誘因，並顛覆「盲目積極思維」的迷思。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">08 · CHAPTER 4 · 焦慮放大機制與即時緩解工具箱</span>
+            <span class="slide-pacing">建議節奏 05:10–05:45</span>
+          </div>
+          <h2 class="action-title">擔憂與<em>四大安全行為</em>才是放大焦慮的引擎；須以「空間與外化」截斷迴圈</h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m9-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#B91C1C"/>
+                </marker>
+              </defs>
+              <text x="270" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">我們是如何無意中放大焦慮的？（惡性迴圈拆解）</text>
+
+              <rect x="165" y="42" width="210" height="44" rx="8" fill="#0B1F3A"/>
+              <text x="270" y="69" text-anchor="middle" fill="#FFFFFF" font-size="13.5" font-weight="700">原始刺激（威脅感／生理波動）</text>
+
+              <path d="M270,86 L270,112" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#m9-arr)"/>
+
+              <rect x="85" y="118" width="370" height="46" rx="8" fill="#FEF7E8" stroke="#C88A2E" stroke-width="1.5"/>
+              <text x="270" y="139" text-anchor="middle" fill="#B4771E" font-size="13" font-weight="800">擔憂（「萬一……」反覆推演，偽裝成做計畫）</text>
+              <text x="270" y="156" text-anchor="middle" fill="#475569" font-size="11.5">把威脅留在腦海，甚至變成「為了焦慮而焦慮」</text>
+
+              <path d="M270,164 L270,190" stroke="#B91C1C" stroke-width="2.5" marker-end="url(#m9-arr)"/>
+
+              <!-- 4 Safety Behaviors -->
+              <rect x="20" y="196" width="500" height="148" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.5"/>
+              <text x="270" y="218" text-anchor="middle" fill="#B91C1C" font-size="13.5" font-weight="800">心理學「安全行為」四大陷阱（短暫安心 ➔ 長期放大恐懼）</text>
+
+              <rect x="34" y="230" width="228" height="46" rx="6" fill="#FFFFFF" stroke="#FCA5A5"/>
+              <text x="44" y="249" fill="#0B1F3A" font-size="12" font-weight="700">1. 迴避恐懼事物</text>
+              <text x="44" y="266" fill="#475569" font-size="11">無法驗證負面預測是假的，強化恐懼證據</text>
+
+              <rect x="278" y="230" width="228" height="46" rx="6" fill="#FFFFFF" stroke="#FCA5A5"/>
+              <text x="288" y="249" fill="#0B1F3A" font-size="12" font-weight="700">2. 反覆尋求確認</text>
+              <text x="288" y="266" fill="#475569" font-size="11">把心態控制權交給別人，阻礙自信與自立</text>
+
+              <rect x="34" y="286" width="228" height="46" rx="6" fill="#FFFFFF" stroke="#FCA5A5"/>
+              <text x="44" y="305" fill="#0B1F3A" font-size="12" font-weight="700">3. 腦海反覆預演</text>
+              <text x="44" y="322" fill="#475569" font-size="11">構思郵件對話總往最壞想，加深過度警覺</text>
+
+              <rect x="278" y="286" width="228" height="46" rx="6" fill="#FFFFFF" stroke="#FCA5A5"/>
+              <text x="288" y="305" fill="#0B1F3A" font-size="12" font-weight="700">4. 持續威脅監控</text>
+              <text x="288" y="322" fill="#475569" font-size="11">職場上靠「過度負責/搞複雜」保住安全感</text>
+
+              <rect x="20" y="358" width="500" height="48" rx="8" fill="#0F766E"/>
+              <text x="270" y="387" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">正念斷路：大腦本具調節力，焦慮念頭會自生自滅，無須與每個「萬一」辯駁</text>
+            </svg>
+          </div>
+
+          <div class="mc-card navy-top">
+            <div class="card-label">ANXIETY RELIEF TOOLKIT · 原書 8 個即時緩解焦慮技巧</div>
+            <h3 class="card-title">下次清晨帶著焦慮醒來或日間突發惶恐時，任選一招截斷迴圈</h3>
+            <ul class="mc-list" style="margin-bottom:0;font-size:13px;">
+              <li><strong>1. 允許焦慮存在（給空間）：</strong>試圖趕走焦慮就像「在流沙中掙扎」，單純接納身體感覺反而讓它輕鬆消散。</li>
+              <li><strong>2. 集中呼吸一次（埃克哈特·託利靈感）：</strong>與自己約定只把全神貫注放在<strong>一次吸氣與呼氣</strong>，之後就允許自己回去想一會兒。</li>
+              <li><strong>3. 外化注意力：</strong>把覺察移出大腦，轉向周遭聲音、景象與物體質感，對抗壓力造成的注意力「窄化」。</li>
+              <li><strong>4. 刻意放慢速度：</strong>焦慮時動作會變急促；有意識地放慢走路與動作，向大腦發送「危險已過去」的生理信號。</li>
+              <li><strong>5. 繃緊與釋放肌肉：</strong>適合靜坐困難時——依序緊繃再徹底放鬆身體各部位。</li>
+              <li><strong>6. 自我關懷：</strong>承認痛苦很正常，「這就是一個人在經歷痛苦的真實感受」。</li>
+              <li><strong>7. 與焦慮「共舞」：</strong>透過身體活動疏解身心積蓄的應激狀態。</li>
+              <li><strong>8. 正念去中心化：</strong>與「萬一……」思緒洪流拉開心理距離。（若長期嚴重，務必尋求專業協助！）</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">停止「攪動渾水」與反覆預演，焦慮才會像曇花般自然經歷高峰而消退</span>
+          <span class="page-num">09 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 10 : 第四課 — 壓力七誘因、麥格尼格爾視角與正念關懷 (圖4-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="09 · 第四課：認識壓力（版型 1：七環模型＋心理反轉）"
+        data-title="壓力源於「高估難度、低估能力」；以「預演壓力＋正念關懷」取代「硬扛與盲目積極思維」"
+        data-note-conclusion="壓力本身是保護性的正常急性反應，但會因疲勞、完美主義等七大誘因演變為慢性消耗；盲目強迫「積極思維」本質上是一種逃避，唯有正念關懷與看見壓力價值才能破局。"
+        data-note-evidence="來源「第四課：認識壓力」：圖4-1 壓力的關鍵誘因（7 個循環節點）；引用凱利·麥格尼格爾（Kelly McGonigal）《自控力》（The Upside of Stress）；「預演壓力」「覺察不愉悅的感受」「正念關懷（溪邊鵝卵石意象）」三大專注練習；提出說出「這是壓力」的「熔斷機制」。"
+        data-note-transition="理解「迴避」如何維持壓力與痛苦後，第五章要教我們進入最高效的「心流狀態」，並在第五課把應對模式徹底翻轉為「直面」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">09 · LESSON 4 · 壓力七大誘因、熔斷機制與自我關懷</span>
+            <span class="slide-pacing">建議節奏 05:45–06:25</span>
+          </div>
+          <h2 class="action-title">壓力源於<em>寧可錯估、低估自我</em>；須以「正念關懷」取代「硬扛與盲目積極思維」</h2>
+        </div>
+
+        <div class="slide-body grid-2-left">
+          <div class="svg-box">
+            <svg viewBox="0 0 460 410" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <text x="230" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">壓力的七大關鍵誘因循環（重繪原書 圖4-1）</text>
+              <text x="230" y="40" text-anchor="middle" fill="#64748B" font-size="11">會讓我們「高估困難、低估自身應對能力」並引發負性認知偏差</text>
+
+              <circle cx="230" cy="212" r="134" fill="none" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="6 4"/>
+              <circle cx="230" cy="212" r="64" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2"/>
+              <text x="230" y="206" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="800">大腦「求穩」</text>
+              <text x="230" y="225" text-anchor="middle" fill="#B4771E" font-size="11.5" font-weight="700">寧可錯估、不可不防</text>
+
+              <!-- 7 Nodes around circle -->
+              <rect x="170" y="60" width="120" height="38" rx="8" fill="#0B1F3A"/>
+              <text x="230" y="83" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">疲勞或精力不足</text>
+
+              <rect x="308" y="106" width="116" height="36" rx="8" fill="#1E4270"/>
+              <text x="366" y="128" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">過度擔憂</text>
+
+              <rect x="328" y="200" width="118" height="36" rx="8" fill="#1E4270"/>
+              <text x="387" y="222" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">過度承擔責任</text>
+
+              <rect x="272" y="302" width="136" height="36" rx="8" fill="#B91C1C"/>
+              <text x="340" y="324" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">煩躁・受傷・憤怒</text>
+
+              <rect x="64" y="302" width="144" height="36" rx="8" fill="#B91C1C"/>
+              <text x="136" y="324" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">孤獨或缺乏支持感</text>
+
+              <rect x="16" y="200" width="112" height="36" rx="8" fill="#1E4270"/>
+              <text x="72" y="222" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">身體不適</text>
+
+              <rect x="36" y="106" width="122" height="36" rx="8" fill="#1E4270"/>
+              <text x="97" y="128" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">完美主義傾向</text>
+
+              <rect x="20" y="358" width="420" height="42" rx="8" fill="#0F766E"/>
+              <text x="230" y="384" text-anchor="middle" fill="#FFFFFF" font-size="12.5" font-weight="700">第四課熔斷機制：明確說出「我累了／這是壓力」，立刻重奪可控感</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">REAPPRAISAL · 麥格尼格爾視角與「預演壓力」三層次</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>態度決定生理效果：</strong>堅信壓力有害會引發負面反應；視壓力為「好老師＆重要性路標」，能促發親社會調節力。</li>
+                <li><strong>預演壓力練習（考前/彙報前）：</strong>① 標記「大腦正在預判」 → ② 掃描身體「戰鬥或逃跑」應激反應並化為動力 → ③ 看見焦慮與興奮緊密相隨。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card red-top">
+              <div class="card-label">PITFALL · 為什麼「盲目積極思維」會適得其反？</div>
+              <p style="margin:0;font-size:13px;color:#334155;">強迫自己保持「一切都會好起來」本質上是<strong>迴避</strong>，潛意識強化了「我無能為力只能靠運氣」的無力感。真正的積極是同時觀照正反兩面。</p>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">MINDFUL COMPASSION · 正念關懷三步（溪邊鵝卵石意象）</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li>① 覺察此刻痛感/焦慮 → ② 看見共通人性（「這就是身為人承受苦難的感受」） → ③ 善待自己，如投鵝卵石入溪般自問：「此刻，什麼能幫到我？」</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">說出「這是壓力」並給予自己空間，是從無力硬扛轉向主動調適的關鍵熔斷器</span>
+          <span class="page-num">10 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 11 : 第五章 & 第五課 — 心流阻礙破局、直面模式與元認知 (表5-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="10 · 第五章 & 第五課：心流與直面模式（版型 5：雙態對比＋策略）"
+        data-title="用正念掃清「焦慮、放鬆錯置、麻木、無聊」四大心流阻礙，並藉「暫停 × 直面 × 元認知」穿越壓力"
+        data-note-conclusion="正念在「覺察中獲得安寧」，心流在「忘我投入中獲得成就」，最新元分析指出正念越高、心流頻率強度越高；第五課透過「直面」與「元認知」將想法視為天邊雲朵，切斷逃避循環。"
+        data-note-evidence="來源第五章與第五課：引用契克森米哈伊心流理論與「金髮姑娘原則」；表5-1 正念覺察破除四大阻礙心流因素；第五課提出「識別7種反應模式（對抗/逃避/僵滯/順從/調理/掩飾/聯結）」、「暫停的力量」、「直面練習（放下沉重揹包）」與「元認知策略」。註：最新元分析具體文獻出處原文未載。"
+        data-note-transition="能在壓力中「直面」並喚起心流後，第六章將把焦點帶回現實職場的精力管理與工作假設重塑。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">10 · CH 5 & LESSON 5 · 心流破局與「直面／元認知」策略</span>
+            <span class="slide-pacing">建議節奏 06:25–07:05</span>
+          </div>
+          <h2 class="action-title">以正念掃除<em>四大心流阻礙</em>，並藉「暫停 × 直面 × 元認知」將想法化為<em>天邊雲朵</em></h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top" style="padding:12px 16px;">
+              <div class="card-label">FLOW & MINDFULNESS · 契克森米哈伊心流 × 表5-1 破局</div>
+              <p style="margin:0 0 8px;font-size:12.5px;color:#334155;">符合「金髮姑娘原則（難度適中）」；<strong>正念在覺察中得安寧，心流在忘我中得滿足</strong>，元分析顯示正念水平越高、心流越頻繁（具體出處原文未載）。</p>
+              <table class="mc-table" style="font-size:11.8px;">
+                <thead><tr><th style="width:22%;">心流阻礙</th><th>正念覺察如何破局（表5-1）</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>焦慮與擔憂</strong></td><td>規律練習正念顯著減焦慮；保護專注時段＋調飛行模式</td></tr>
+                  <tr><td><strong>被動放鬆</strong></td><td>區分「無意識滑手機消遣」vs. 具挑戰參與感的恢復活動</td></tr>
+                  <tr><td><strong>麻木感</strong></td><td>用「初心思維」與好奇心打破常規，重拾日常趣味</td></tr>
+                  <tr><td><strong>無聊感</strong></td><td>不把喜歡的工作押後當「不正經」，移至待辦清單最前面</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">AWAKENING · 第五課覺醒：七種典型壓力應對模式</div>
+              <p style="margin:0;font-size:12.5px;color:#334155;line-height:1.55;">
+                <strong>對抗型</strong>（先發制人易過頭）｜<strong>逃避型</strong>（離場）｜<strong>僵滯型</strong>（不動）｜<strong>順從型</strong>（妥協討好）｜<strong>調理型</strong>（只計畫不行動）｜<strong>掩飾型</strong>（鴕鳥心態）｜<strong>聯結型</strong>（過度付出傷身）— 覺察慣性即能轉向。
+              </p>
+            </div>
+          </div>
+
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m11-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#0F766E"/>
+                </marker>
+              </defs>
+              <text x="270" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">第五課「直面與穿越」三要素 ＋ 元認知距離策略</text>
+
+              <!-- Contrast Bar -->
+              <rect x="20" y="38" width="242" height="58" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+              <text x="141" y="60" text-anchor="middle" fill="#B91C1C" font-size="13" font-weight="800">❌ 逃避模式（維持並放大壓力）</text>
+              <text x="141" y="80" text-anchor="middle" fill="#475569" font-size="11.5">執行功能離線 ➔ 衝動回信／視野受限</text>
+
+              <rect x="278" y="38" width="242" height="58" rx="8" fill="#F0FDFA" stroke="#0F766E"/>
+              <text x="399" y="60" text-anchor="middle" fill="#0F766E" font-size="13" font-weight="800">✅ 直面模式（釋放與化解壓力）</text>
+              <text x="399" y="80" text-anchor="middle" fill="#0B1F3A" font-size="11.5">從「可能如何」揣測轉向「當下如何」探索</text>
+
+              <!-- 3 Elements -->
+              <rect x="20" y="114" width="154" height="148" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+              <text x="97" y="140" text-anchor="middle" fill="#1E4270" font-size="13.5" font-weight="800">1. 識別反應模式</text>
+              <text x="32" y="166" fill="#334155" font-size="11.8">看見急著解決問題、</text>
+              <text x="32" y="186" fill="#334155" font-size="11.8">爭辯或自責的自動</text>
+              <text x="32" y="206" fill="#334155" font-size="11.8">衝動，明白這只是</text>
+              <text x="32" y="226" fill="#B91C1C" font-size="11.8" font-weight="700">大腦執行功能暫時離線</text>
+
+              <line x1="178" y1="188" x2="194" y2="188" stroke="#0F766E" stroke-width="2.5" marker-end="url(#m11-arr)"/>
+
+              <rect x="198" y="114" width="144" height="148" rx="10" fill="#0B1F3A"/>
+              <text x="270" y="140" text-anchor="middle" fill="#E0A84B" font-size="13.5" font-weight="800">2. 暫停的力量</text>
+              <text x="210" y="166" fill="#FFFFFF" font-size="11.8">除生死關頭外我們</text>
+              <text x="210" y="186" fill="#FFFFFF" font-size="11.8">永遠可以等待！僅僅</text>
+              <text x="210" y="206" fill="#FFFFFF" font-size="11.8">「什麼都不做」就</text>
+              <text x="210" y="226" fill="#5EEAD4" font-size="11.8" font-weight="700">已改寫了事件結果</text>
+
+              <line x1="346" y1="188" x2="362" y2="188" stroke="#0F766E" stroke-width="2.5" marker-end="url(#m11-arr)"/>
+
+              <rect x="366" y="114" width="154" height="148" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+              <text x="443" y="140" text-anchor="middle" fill="#1E4270" font-size="13.5" font-weight="800">3. 讀懂壓力信號</text>
+              <text x="378" y="166" fill="#334155" font-size="11.8">• 情緒：證明你在乎</text>
+              <text x="378" y="186" fill="#334155" font-size="11.8">• 身體：胃緊/心跳先響</text>
+              <text x="378" y="206" fill="#334155" font-size="11.8">• 思維：狂奔或反芻</text>
+              <text x="378" y="226" fill="#0F766E" font-size="11.8" font-weight="700">把呼吸帶到緊繃處</text>
+
+              <!-- Metacognition & Backpack Practice -->
+              <rect x="20" y="280" width="500" height="126" rx="10" fill="#FEF7E8" stroke="#E0A84B" stroke-width="1.5"/>
+              <text x="36" y="305" fill="#B4771E" font-size="13" font-weight="800">★ 元認知練習（「直面」實作）：把念頭看作天邊雲朵，放下沉重揹包</text>
+              <text x="36" y="330" fill="#0B1F3A" font-size="12.2">1. 刻意想起一件微小的棘手煩心事，不急著解決，定位它在身體（如胃部/肩膀）的痕跡；</text>
+              <text x="36" y="352" fill="#0B1F3A" font-size="12.2">2. 把呼吸送到該部位陪伴幾次，感受緊繃感逐漸鬆開；</text>
+              <text x="36" y="374" fill="#0B1F3A" font-size="12.2">3. 結束前想像把「難題揹包」輕輕放到地上向後退開——認知到念頭只是心理活動而非客觀真相。</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">在「衝動反應」前按下暫停鍵並直面體感，創造性解方才有機會浮現</span>
+          <span class="page-num">11 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 12 : 第六章 — 工作假設重塑、想法推遲法與 STOP 練習 (表6-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="11 · 第六章：感覺更好，工作更順（版型 2：假設重塑＋STOP）"
+        data-title="精力未恢復下硬撐只會「做得越多、成效越低」；須用「想法推遲法」與「STOP」重塑工作假設"
+        data-note-conclusion="加班與多工切換看似勤奮，實則是精力耗竭下的無奈自保；重新定義「休息是高效工作的燃料」，並運用想法推遲法與 STOP 四步暫停，能同時提升幸福感與工作品質。"
+        data-note-evidence="來源第六章：提出「孩子遞玩具」比喻與「想法推遲法（借鑑元認知『延時憂慮法』）」；列舉認知耗竭十大信號與精力恢復七條科學規律；表6-1 列出 13 條舊工作假設與替代認知；詳細教授「STOP 一分鐘暫停練習」。"
+        data-note-transition="調整好個人工作節奏與精力邊界後，第六課要帶我們走進人際互動最艱難的場域：會議衝突與績效反饋。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">11 · CHAPTER 6 · 精力恢復機制、工作假設重塑與 STOP</span>
+            <span class="slide-pacing">建議節奏 07:05–07:40</span>
+          </div>
+          <h2 class="action-title">精力未恢復只會<em>做得越多、成效越低</em>；以「想法推遲法」與 <em>STOP</em> 重塑工作假設</h2>
+        </div>
+
+        <div class="slide-body grid-2-wide">
+          <div class="mc-card navy-top" style="padding:13px 16px;">
+            <div class="card-label">TABLE 6-1 · 重新審視 13 條職場預設（精選核心 8 組對照）</div>
+            <table class="mc-table" style="font-size:11.8px;">
+              <thead><tr><th style="width:42%;">舊的工作假設（無意識腳本）</th><th>正念替代認知</th></tr></thead>
+              <tbody>
+                <tr><td><strong>我必須隨時保持待命狀態</strong></td><td>隨時在線≠可靠，反傳遞你不珍視自己時間的信號</td></tr>
+                <tr><td><strong>休息是一種奢侈／少睡點能應付</strong></td><td>休息是精準度與效率的燃料；今日透支實則竊取明日精力</td></tr>
+                <tr><td><strong>快速切換任務能提高效率</strong></td><td>頻繁切換耗腦力；改為單項專注或同類事項批量處理</td></tr>
+                <tr><td><strong>我無法拒絕他人，否則顯得無能</strong></td><td>若不拒絕將拉低品質或打亂優先級，拒絕才是明智之選</td></tr>
+                <tr><td><strong>收到會議邀請就必須參加</strong></td><td>婉拒或委派可釋放時間；警惕沉沒成本，無效會議可離場</td></tr>
+                <tr><td><strong>大部分時間保持忙碌是好事</strong></td><td>忙碌≠高效；改用「專注工作 30 分鐘＋結構化休息」</td></tr>
+                <tr><td><strong>所有事情永遠都很緊急</strong></td><td>疲憊大腦易失判斷力，回應「緊急」請求前先暫停一下</td></tr>
+                <tr><td><strong>邊界由崗位決定，下班看通知</strong></td><td>處理要務請開「飛行模式」；下班看通知會阻礙精力恢復</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card gold-top">
+              <div class="card-label">DELAY WORRY · 下班「想法推遲法」（借鑑延時憂慮法）</div>
+              <p style="margin:0;font-size:12.8px;color:#334155;line-height:1.55;">
+                晚間工作念頭如「小孩子遞玩具」，責怪無益。先接納它的善意提醒，對它說：<strong>「謝謝提醒，現在不是時候，明天上班留 5–10 分鐘專時想你」</strong>，把玩具輕輕放一邊。
+              </p>
+            </div>
+
+            <div class="svg-box" style="flex:1;padding:10px 14px;">
+              <svg viewBox="0 0 420 235" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <text x="210" y="20" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">一分鐘「STOP 暫停練習」四步驟</text>
+
+                <rect x="12" y="34" width="396" height="42" rx="8" fill="#0B1F3A"/>
+                <text x="30" y="60" fill="#E0A84B" font-size="16" font-weight="800">S</text>
+                <text x="58" y="60" fill="#FFFFFF" font-size="12.5" font-weight="700">Stop 停下：暫時停下手頭工作與思緒，閉眼或放低視線</text>
+
+                <rect x="12" y="84" width="396" height="42" rx="8" fill="#1E4270"/>
+                <text x="30" y="110" fill="#E0A84B" font-size="16" font-weight="800">T</text>
+                <text x="58" y="110" fill="#FFFFFF" font-size="12.5" font-weight="700">Take a breath 深呼吸：錨定呼吸、雙腳或感官（可多停留）</text>
+
+                <rect x="12" y="134" width="396" height="42" rx="8" fill="#0F766E"/>
+                <text x="30" y="160" fill="#FEF7E8" font-size="16" font-weight="800">O</text>
+                <text x="58" y="160" fill="#FFFFFF" font-size="12.5" font-weight="700">Observe 覺察：掃描緊繃、情緒與念頭，舒展面部放鬆肩膀</text>
+
+                <rect x="12" y="184" width="396" height="42" rx="8" fill="#FEF7E8" stroke="#C88A2E" stroke-width="1.5"/>
+                <text x="30" y="210" fill="#B4771E" font-size="16" font-weight="800">P</text>
+                <text x="58" y="210" fill="#0B1F3A" font-size="12.5" font-weight="700">Proceed 繼續行動：帶著清醒決定維持原方向或調整優先序</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">晚上 10 點疲憊大腦覺得無解的難題，早上 8 點精力恢復後往往一目瞭然</span>
+          <span class="page-num">12 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 13 : 第六課 — 來自人的壓力、杏仁核劫持與正念溝通 (圖6-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="12 · 第六課：化解反饋中的威脅感（版型 1：人際壓力環＋溝通原則）"
+        data-title="分歧與反饋容易觸發「杏仁核劫持」與七類防衛反應；正念能穩住內在平靜並重啟雙向溝通"
+        data-note-conclusion="職場壓抑衝突換來的「表面和諧」會助長群體思維與不公；反饋與分歧令人不安，是因為遠古大腦怕被群體排斥而引發杏仁核劫持；正念溝通讓我們在對立中保持穩健。"
+        data-note-evidence="來源「第六課：化解反饋中的威脅感」：解釋抗拒練習的心理；引用喬·卡巴金《多舛的生命》「來自人的壓力」、丹尼爾·戈爾曼「杏仁核劫持」（圖6-1 呈現 7 類反應）；艾倫·蘭格「對信號保持開放」研究；以及三階段「靜坐練習」（身體 → 聲音 → 念頭雲朵）。"
+        data-note-transition="在學會處理內部壓力與人際衝突後，第七章將面對現代組織與職涯最根本的考驗：變革與不確定性。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">12 · LESSON 6 · 化解反饋威脅感與正念溝通</span>
+            <span class="slide-pacing">建議節奏 07:40–08:15</span>
+          </div>
+          <h2 class="action-title">分歧常觸發<em>杏仁核劫持</em>與七類防衛反應；正念溝通能守住定力並重啟雙向對話</h2>
+        </div>
+
+        <div class="slide-body grid-2-left">
+          <div class="svg-box">
+            <svg viewBox="0 0 460 410" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <text x="230" y="22" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="800">「來自人的壓力」引發七類典型反應（重繪 圖6-1）</text>
+              <text x="230" y="40" text-anchor="middle" fill="#64748B" font-size="11">卡巴金《多舛的生命》× 戈爾曼「杏仁核劫持」（前額葉暫時失靈）</text>
+
+              <circle cx="230" cy="216" r="130" fill="none" stroke="#CBD5E1" stroke-width="2.5"/>
+              <circle cx="230" cy="216" r="64" fill="#0B1F3A"/>
+              <text x="230" y="210" text-anchor="middle" fill="#E0A84B" font-size="12.5" font-weight="800">遠古排斥恐懼</text>
+              <text x="230" y="228" text-anchor="middle" fill="#FFFFFF" font-size="11">怕失去歸屬與尊重</text>
+
+              <rect x="172" y="64" width="116" height="36" rx="8" fill="#B91C1C"/>
+              <text x="230" y="86" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">反駁或爭辯</text>
+
+              <rect x="304" y="108" width="124" height="36" rx="8" fill="#1E4270"/>
+              <text x="366" y="130" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">證明自己正確</text>
+
+              <rect x="328" y="202" width="116" height="36" rx="8" fill="#1E4270"/>
+              <text x="386" y="224" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">屈服或懇求</text>
+
+              <rect x="278" y="302" width="118" height="36" rx="8" fill="#1E4270"/>
+              <text x="337" y="324" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">自我批判</text>
+
+              <rect x="64" y="302" width="118" height="36" rx="8" fill="#B91C1C"/>
+              <text x="123" y="324" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">報復心態</text>
+
+              <rect x="16" y="202" width="116" height="36" rx="8" fill="#1E4270"/>
+              <text x="74" y="224" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">疏離或迴避</text>
+
+              <rect x="34" y="108" width="122" height="36" rx="8" fill="#B91C1C"/>
+              <text x="95" y="130" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">指控或責怪</text>
+
+              <rect x="20" y="358" width="420" height="42" rx="8" fill="#FEF7E8" stroke="#C88A2E"/>
+              <text x="230" y="384" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">案例：「她不是壞人，只是一個感到受傷的人」— 正念如斷路器控制火勢</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card red-top">
+              <div class="card-label">THE COST OF FAKE HARMONY · 表面和諧的代價</div>
+              <p style="margin:0;font-size:13px;color:#334155;">壓抑分歧與逃避刺耳反饋，會導致<strong>盲從附和、群體思維、安於平庸</strong>，並助長不公與缺乏問責；衝突本身正標誌著需要被討論的問題。</p>
+            </div>
+
+            <div class="mc-card navy-top">
+              <div class="card-label">MINDFUL COMMUNICATION · 蘭格「對信號保持開放」</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>不把人定義為問題：</strong>接納對立立場自有其緣由（不代表認同），發掘共同關注點以推進局勢。</li>
+                <li><strong>延遲行動「沉澱」：</strong>憤怒寫完的回信先擱置一天重寫（學員真實轉折），以平靜與真誠贏得對方傾聽。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">SITTING PRACTICE · 第六課靜坐練習（三層注意力切換）</div>
+              <p style="margin:0;font-size:12.8px;color:#334155;">
+                ① <strong>身體掃描與外緣</strong> → ② <strong>純粹聆聽聲音</strong>（音色音量、覺察好惡標籤） → ③ <strong>旁觀念頭雲朵</strong>（不捲入內容）。遇挑釁時如同啟動情緒「斷路器」。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">為何在最需要平衡的時刻，任由他人打破我們內心的平靜？慷慨與開放才是溝通力量</span>
+          <span class="page-num">13 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 14 : 第七章 & 第七課 — 確定性悖論、存在模式與山嶽冥想 (圖7-1, 7-2)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="13 · 第七章 & 第七課：不確定中的穩定與接納（版型 1：雙路徑＋光譜轉換）"
+        data-title="過度追求確定性反而導致僵化脆弱（確定性悖論）；須轉入「存在模式」與「山嶽冥想」練習不屈服的接納"
+        data-note-conclusion="成功使人重複套路以追求確定性，但真正長久的成功恰恰源自「對不確定性的接納」；破除大腦「差異監控器」，用正念接納（認清現實而非認命）開啟審慎行動。"
+        data-note-evidence="來源第七章與第七課：圖7-1「確定性悖論——與不確定性共處的重要性」；應對改變六法與突破現狀兩法（不過度投入工作、持續學習）；引用德韋克「尚未達成」成長型思維；第七課教授「山嶽冥想」、剖析「差異監控器」與圖7-2「遠方（驅動模式）vs 當下（存在模式）」。"
+        data-note-transition="擁有「如山般穩定」的接納與當下存在模式後，第八章將把視角擴大到組織多元包容與終身習慣延續。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">13 · CH 7 & LESSON 7 · 確定性悖論、存在模式與山嶽冥想</span>
+            <span class="slide-pacing">建議節奏 08:15–08:55</span>
+          </div>
+          <h2 class="action-title">過度追求確定反致僵化（<em>確定性悖論</em>）；以「山嶽冥想」切換至<em>當下存在模式</em></h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <!-- Top: 圖7-1 確定性悖論 -->
+              <text x="270" y="20" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">確定性悖論：雙路徑對比（重繪原書 圖7-1）</text>
+
+              <!-- Path A: 渴望確定性 -->
+              <rect x="14" y="34" width="512" height="72" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+              <text x="26" y="54" fill="#B91C1C" font-size="12" font-weight="800">路徑 A｜渴望確定性（被恐懼與自我實現預言驅動）</text>
+              <text x="26" y="76" fill="#334155" font-size="11.5">通過成功獲確定 → 建體系 → 心不在焉重複 → 易受變化衝擊 →</text>
+              <text x="26" y="94" fill="#B91C1C" font-size="11.5" font-weight="700">結果：反應性自我保護、防禦性、絕望與操縱（視野狹隘如機器人）</text>
+
+              <!-- Path B: 直面不確定性 -->
+              <rect x="14" y="114" width="512" height="72" rx="8" fill="#F0FDFA" stroke="#0F766E"/>
+              <text x="26" y="134" fill="#0F766E" font-size="12" font-weight="800">路徑 B｜直面不確定性（由選擇與自我信念驅動）</text>
+              <text x="26" y="156" fill="#334155" font-size="11.5">同樣從成功出發 → 建有目的的體系 → 主動學習響應 → 積極應對變化 →</text>
+              <text x="26" y="174" fill="#0F766E" font-size="11.5" font-weight="700">結果：掌控與自立，收穫穩定、洞察力與信心（刻意打破常規保持鮮活）</text>
+
+              <!-- Bottom: 圖7-2 心智模式轉換光譜 -->
+              <text x="270" y="212" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">正念心智模式轉換（重繪原書 圖7-2）</text>
+              <rect x="14" y="222" width="214" height="28" rx="6" fill="#475569"/>
+              <text x="121" y="241" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">遠方（驅動模式 / 自動駕駛）</text>
+
+              <rect x="312" y="222" width="214" height="28" rx="6" fill="#0B1F3A"/>
+              <text x="419" y="241" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="700">當下（存在模式 / 主動覺察）</text>
+
+              <!-- 8 pairs -->
+              <g font-size="11.5" fill="#334155">
+                <text x="218" y="268" text-anchor="end">評估</text><text x="270" y="268" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="268" fill="#0F766E" font-weight="700">感受或覺察</text>
+                <text x="218" y="286" text-anchor="end">爭辯</text><text x="270" y="286" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="286" fill="#0F766E" font-weight="700">允許</text>
+                <text x="218" y="304" text-anchor="end">竭力追逐</text><text x="270" y="304" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="304" fill="#0F766E" font-weight="700">撫慰</text>
+                <text x="218" y="322" text-anchor="end">緊抓不放</text><text x="270" y="322" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="322" fill="#0F766E" font-weight="700">輕柔觸碰</text>
+                <text x="218" y="340" text-anchor="end">主觀臆斷</text><text x="270" y="340" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="340" fill="#0F766E" font-weight="700">明確知曉</text>
+                <text x="218" y="358" text-anchor="end">沉溺過往或預測未來</text><text x="270" y="358" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="358" fill="#0F766E" font-weight="700">安於當下</text>
+                <text x="218" y="376" text-anchor="end">衝動行事</text><text x="270" y="376" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="376" fill="#0F766E" font-weight="700">身心合一的行動</text>
+                <text x="218" y="394" text-anchor="end">固有模式或常規</text><text x="270" y="394" text-anchor="middle" fill="#C88A2E" font-weight="700">← ➔</text><text x="322" y="394" fill="#0F766E" font-weight="700">選擇</text>
+              </g>
+              <text x="270" y="414" text-anchor="middle" fill="#B4771E" font-size="11.5" font-weight="700">主動覺察支持你在這兩種模式之間隨時自由轉換</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">LESSON 7 · 破除「差異監控器」：接納≠屈服</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>差異監控器：</strong>大腦不斷拿「理想標準」對比「現實落差」，引發對現狀的憤怒與驅動消耗。</li>
+                <li><strong>正念接納真義：</strong>不是忍受不公或放棄，而是<strong>先認清「事情已經發生」的事實</strong>（如實知曉），不再疊加情緒痛苦，才能決定審慎行動。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">NAVIGATING CHANGE · 變革與不確定時期自保法則</div>
+              <ul class="mc-list" style="margin-bottom:0;">
+                <li><strong>兩大防線：</strong>① 不對任何單一工作過度投入（企業與人是對等共生非從屬）；② 持續學習，將不確定轉為選擇權與「尚未達成」成長思維。</li>
+                <li><strong>可控領域：</strong>守護別人奪不走的專長、態度與價值觀羅盤；安穩時主動換路線或換班「交朋友式」引入微不確定。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">MOUNTAIN MEDITATION · 山嶽冥想（定力錨點）</div>
+              <p style="margin:0;font-size:12.8px;color:#334155;">坐姿如大山紮根大地，四季風雨日夜流轉於身旁，大山巋然不動——培養面對情緒風暴時的耐心、尊嚴與穩健。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">確定性是暫時的，接納不確定與疼痛僅是當下現象，才能從「受害者」變回「選擇者」</span>
+          <span class="page-num">14 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 15 : 第八章 & 第八課 — 包容的正念、日常八情境與終身實踐 (圖8-1)
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="14 · 第八章 & 第八課：包容的正念與回望前行（版型 3：日常矩陣＋終身策略）"
+        data-title="主動覺察能亮起「紅燈」中斷無意識偏見，並以「此處 vs. 彼處」將正念化為終身自主選擇"
+        data-note-conclusion="大腦的「社會分類」捷徑雖高效卻會製造內外群體偏見與歧視；正念能讓我們對差異保持開放與謙遜；而在課程結束後，「此處與彼處」的覺察將成為永遠的起點。"
+        data-note-evidence="來源第八章與第八課：解析偏見三成分（情感/行為/認知）與「對應性偏見」；引用艾倫·蘭格對社會分類的洞見與瑞貝卡·克瑞恩（Rebecca Crane）「內在工作」；圖8-1 列出八類可用存在模式改善的日常活動；第八課提出「此處 vs 彼處」練習與未來數週實踐建議。"
+        data-note-transition="最後一頁，我們將八章全部收斂成全書因果閉環，並整理出自己與團隊成員明日即可啟動的落地行動清單。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">14 · CH 8 & LESSON 8 · 包容多元、日常八情境與終身練習</span>
+            <span class="slide-pacing">建議節奏 08:55–09:30</span>
+          </div>
+          <h2 class="action-title">覺察能亮起「紅燈」中斷<em>無意識偏見</em>，並以「此處 vs. 彼處」實現終身自主選擇</h2>
+        </div>
+
+        <div class="slide-body grid-2">
+          <div class="svg-box">
+            <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <text x="270" y="22" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="800">存在模式可改善的八類日常活動（重繪原書 圖8-1）</text>
+              <text x="270" y="40" text-anchor="middle" fill="#64748B" font-size="11">本身無好壞，但多半在「驅動／自動駕駛」下發生；轉入「存在模式」即重獲選擇權</text>
+
+              <!-- 8 Cards in 4x2 Grid -->
+              <rect x="16" y="54" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="75" y="84" text-anchor="middle" font-size="22">📱</text>
+              <text x="75" y="110" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">瀏覽社群媒體</text>
+              <text x="75" y="130" text-anchor="middle" fill="#64748B" font-size="10.5">覺察壓力性滑屏</text>
+
+              <rect x="146" y="54" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="205" y="84" text-anchor="middle" font-size="22">📢</text>
+              <text x="205" y="110" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">查看壞新聞</text>
+              <text x="205" y="130" text-anchor="middle" fill="#64748B" font-size="10.5">先問是否真想看</text>
+
+              <rect x="276" y="54" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="335" y="84" text-anchor="middle" font-size="22">⏳</text>
+              <text x="335" y="110" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">拖延事務</text>
+              <text x="335" y="130" text-anchor="middle" fill="#64748B" font-size="10.5">拆解任務或蓄能</text>
+
+              <rect x="406" y="54" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="465" y="84" text-anchor="middle" font-size="22">🍫</text>
+              <text x="465" y="110" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">無意識吃零食</text>
+              <text x="465" y="130" text-anchor="middle" fill="#64748B" font-size="10.5">轉為正念進食</text>
+
+              <rect x="16" y="158" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="75" y="188" text-anchor="middle" font-size="22">🌪️</text>
+              <text x="75" y="214" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">他人帶來的壓力</text>
+              <text x="75" y="234" text-anchor="middle" fill="#64748B" font-size="10.5">不讓情緒被劫持</text>
+
+              <rect x="146" y="158" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="205" y="188" text-anchor="middle" font-size="22">😒</text>
+              <text x="205" y="214" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">憤世嫉俗</text>
+              <text x="205" y="234" text-anchor="middle" fill="#64748B" font-size="10.5">覺察防禦性負評</text>
+
+              <rect x="276" y="158" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="335" y="188" text-anchor="middle" font-size="22">💬</text>
+              <text x="335" y="214" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">說閒話</text>
+              <text x="335" y="234" text-anchor="middle" fill="#64748B" font-size="10.5">留意言詞對人影響</text>
+
+              <rect x="406" y="158" width="118" height="92" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+              <text x="465" y="188" text-anchor="middle" font-size="22">💭</text>
+              <text x="465" y="214" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">主觀臆測</text>
+              <text x="465" y="234" text-anchor="middle" fill="#64748B" font-size="10.5">看清臆測≠事實</text>
+
+              <!-- Bottom Box: DEI & Mindful Inclusion -->
+              <rect x="16" y="268" width="508" height="138" rx="10" fill="#0B1F3A"/>
+              <text x="32" y="294" fill="#E0A84B" font-size="13" font-weight="800">包容的正念（Ch 8）：打破「社會分類」與「對應性偏見」</text>
+              <text x="32" y="318" fill="#FFFFFF" font-size="12">• 大腦靠性別/種族/年齡快速分類省力，卻易對群體外者嚴苛、將行為歸咎人格（對應性偏見）</text>
+              <text x="32" y="340" fill="#CBD5E1" font-size="12">• 蘭格洞見：分類難免，但覺察能在匆忙下結論時「亮起紅燈」，避免言行表現出歧視</text>
+              <text x="32" y="362" fill="#CBD5E1" font-size="12">• 克瑞恩「內在工作」：帶謙遜與好奇走進不安對話；注意企業導入正念須兼顧教師與環境多樣性</text>
+              <text x="32" y="388" fill="#5EEAD4" font-size="12" font-weight="700">★ 接納絕非容忍不公平工作量或歧視，而是先認清現實才能採取有效行動</text>
+            </svg>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="mc-card navy-top">
+              <div class="card-label">LESSON 8 PRACTICE · 探索「此處（Here）」vs.「彼處（There）」</div>
+              <p style="margin:0;font-size:13px;color:#334155;line-height:1.6;">
+                「此處」是安住當下的豐盈覺知；「彼處」是沉溺分析評判的自動駕駛。只要反問自己一句：<strong>「我現在在哪裡？」</strong>——問出的那一刻，你就已經回到了「家」中。
+              </p>
+            </div>
+
+            <div class="mc-card teal-top" style="flex:1;">
+              <div class="card-label">SUSTAINING THE HABIT · 未來數週與數月的六條建議</div>
+              <ul class="mc-list" style="margin-bottom:0;font-size:12.8px;">
+                <li><strong>覺得不需要正念時，正是練習之時：</strong>狀態好轉後切忌鬆懈重陷舊習。</li>
+                <li><strong>中斷了別自責：</strong>無論停了幾天或幾個月，永遠只從「當下這一次呼吸」重啟。</li>
+                <li><strong>正念日充電：</strong>每 2–3 個月安排一次遠離干擾的「正念日」或靜修營。</li>
+                <li><strong>區分「我不想」vs.「我做不到」：</strong>先別急著對別人說教，先自己活出平靜，周遭自會察覺。</li>
+                <li><strong>常問初心：</strong>「今天什麼對我最重要？是什麼引領我來到此刻？」</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">正念不是生活的施工藍圖，而是一封邀請你全然投入真實生活的邀請函</span>
+          <span class="page-num">15 / 16</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 16 : 全書脈絡總結與個人／團隊立即行動方案
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="15 · 總結與落地行動（版型 6：全書閉環＋團隊實踐）"
+        data-title="從「遠古求生自動駕駛」躍遷為「清醒有選擇的團隊」：三大精華與今晚即可啟動的一件事"
+        data-note-conclusion="《正念習慣》完整閉環在於「察覺自動駕駛 → 建立日常微觸發 → 接納壓力與不確定 → 做出符合價值觀的選擇」。這對個人修復與團隊協作溝通都具備即時價值。"
+        data-note-evidence="嚴格彙整全書核心觀念（圖1-4注意力循環、表2-1四步法、STOP暫停、表3-2十一項態度、表6-1工作假設重塑、圖7-2存在模式），完全忠於麗莎·雷恩原著，無外加推測。"
+        data-note-transition="簡報結束！歡迎回到知識庫首頁使用「STOP 暫停與工作假設重塑器」，並與團隊成員在 Supabase 雲端共學牆分享第一週實作觀察。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">15 · SYNTHESIS & ACTION PLAN · 全書精華總結與行動方案</span>
+            <span class="slide-pacing">建議節奏 09:30–10:00</span>
+          </div>
+          <h2 class="action-title">從「自動駕駛」躍遷為<em>清醒有選擇的自己與團隊</em>：三大核心精華與立即行動</h2>
+        </div>
+
+        <div class="slide-body" style="gap:16px;">
+          <div class="svg-box" style="height:175px;padding:10px 14px;flex-shrink:0;">
+            <svg viewBox="0 0 1120 145" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="m16-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                </marker>
+              </defs>
+              <text x="560" y="18" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="800">全書核心因果閉環：從「刺激 → 自動反應」改寫為「刺激 → 暫停覺察 → 如實接納 → 價值選擇」</text>
+
+              <rect x="14" y="34" width="244" height="96" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+              <text x="136" y="58" text-anchor="middle" fill="#1E4270" font-size="13.5" font-weight="800">1. 識別自動駕駛（Ch1–2）</text>
+              <text x="28" y="82" fill="#334155" font-size="12">• 走神是訓練而非失敗（圖1-4）</text>
+              <text x="28" y="102" fill="#334155" font-size="12">• 兩分鐘法則＋日常觸發點</text>
+              <text x="28" y="120" fill="#0F766E" font-size="11.5" font-weight="700">➔ 從思維列車退回站臺</text>
+
+              <line x1="264" y1="82" x2="290" y2="82" stroke="#C88A2E" stroke-width="3" marker-end="url(#m16-arr)"/>
+
+              <rect x="296" y="34" width="244" height="96" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.5"/>
+              <text x="418" y="58" text-anchor="middle" fill="#1E4270" font-size="13.5" font-weight="800">2. 斷開消耗迴圈（Ch3–4）</text>
+              <text x="310" y="82" fill="#334155" font-size="12">• 工作心理分離抗耗竭漏斗</text>
+              <text x="310" y="102" fill="#334155" font-size="12">• 停用四大安全行為、練習愉悅</text>
+              <text x="310" y="120" fill="#0F766E" font-size="11.5" font-weight="700">➔ 說出「這是壓力」自我關懷</text>
+
+              <line x1="546" y1="82" x2="572" y2="82" stroke="#C88A2E" stroke-width="3" marker-end="url(#m16-arr)"/>
+
+              <rect x="578" y="34" width="244" height="96" rx="10" fill="#F8FAFC" stroke="#C88A2E" stroke-width="1.5"/>
+              <text x="700" y="58" text-anchor="middle" fill="#B4771E" font-size="13.5" font-weight="800">3. 重塑工作與溝通（Ch5–6）</text>
+              <text x="592" y="82" fill="#334155" font-size="12">• 直面＆元認知進入心流</text>
+              <text x="592" y="102" fill="#334155" font-size="12">• 13 條工作假設＋STOP 暫停</text>
+              <text x="592" y="120" fill="#0F766E" font-size="11.5" font-weight="700">➔ 化解杏仁核劫持與反饋威脅</text>
+
+              <line x1="828" y1="82" x2="854" y2="82" stroke="#C88A2E" stroke-width="3" marker-end="url(#m16-arr)"/>
+
+              <rect x="860" y="34" width="246" height="96" rx="10" fill="#0B1F3A"/>
+              <text x="983" y="58" text-anchor="middle" fill="#E0A84B" font-size="13.5" font-weight="800">4. 穩定與包容共生（Ch7–8）</text>
+              <text x="874" y="82" fill="#FFFFFF" font-size="12">• 直面不確定、山嶽冥想接納</text>
+              <text x="874" y="102" fill="#FFFFFF" font-size="12">• 亮紅燈中斷無意識社會偏見</text>
+              <text x="874" y="120" fill="#5EEAD4" font-size="11.5" font-weight="700">➔ 安住「此處」終身自主實踐</text>
+            </svg>
+          </div>
+
+          <div class="grid-3">
+            <div class="mc-card navy-top">
+              <div class="card-label">ACTION 01 · 個人每日微習慣</div>
+              <h3 class="card-title">綁定 1 個「日常觸發點」＋ 2 分鐘呼吸</h3>
+              <p style="margin:0;font-size:13px;color:#334155;line-height:1.6;">
+                不額外找時間！挑選早晨等電腦開機、排隊或坐上餐桌時啟動「正念鈴聲」；專注練習嚴守「兩分鐘法則」，先求每日不斷、再談延長。
+              </p>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">ACTION 02 · 團隊高壓會議守則</div>
+              <h3 class="card-title">棘手反饋與回信前執行「STOP 暫停」</h3>
+              <p style="margin:0;font-size:13px;color:#334155;line-height:1.6;">
+                被同仁意見觸發防衛（圖6-1）時，默唸「這是壓力」，執行 1 分鐘 STOP 讓前額葉重新上線；晚間冒出工作焦慮則用「想法推遲法」交給明早。
+              </p>
+            </div>
+
+            <div class="mc-card dark">
+              <div class="card-label">TONIGHT'S FIRST STEP · 今晚即可做的一件事</div>
+              <h3 class="card-title">盤點「滋養 vs. 消耗」並改寫一條工作假設</h3>
+              <p style="margin:0 0 10px;font-size:13px;color:rgba(255,255,255,0.86);line-height:1.6;">
+                在知識庫首頁的「STOP 與假設重塑器」中，寫下本週你最想放手的一條舊假設（例：下班不秒回訊息、把喜歡的工作移到最前面），並保留一項滋養小活動。
+              </p>
+              <a href="../index.html#mindful-tool" style="display:inline-block;padding:8px 14px;background:#C88A2E;color:#fff;border-radius:7px;font-size:12.5px;font-weight:700;text-align:center;">回到首頁啟動「正念重塑器」 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">全書 16 頁精讀完畢｜請至首頁知識庫進行關鍵字檢索、團隊打卡與共學討論</span>
+          <span class="page-num">16 / 16</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Speaker Notes Drawer (N) -->
+  <aside class="notes-drawer" id="notes-drawer" aria-label="麥肯錫三段式講者備忘稿">
+    <div class="notes-header">
+      <span id="notes-slide-label">Slide 01 / 16</span>
+      <button type="button" class="ctrl-btn" id="notes-close" style="padding:3px 10px;">收合講稿 (N)</button>
+    </div>
+    <div class="notes-grid">
+      <div class="note-col">
+        <h4>① 本頁結論（講給聽眾聽的一句話）</h4>
+        <p id="note-conclusion"></p>
+      </div>
+      <div class="note-col">
+        <h4>② 補充說明（原書細節・研究・案例）</h4>
+        <p id="note-evidence"></p>
+      </div>
+      <div class="note-col">
+        <h4>③ 下一頁轉場（邏輯銜接）</h4>
+        <p id="note-transition"></p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Slide Grid Overview & In-Deck Search (G) -->
+  <div class="grid-overlay" id="grid-overlay" role="dialog" aria-modal="true" aria-label="投影片總覽與頁內檢索">
+    <div class="grid-overlay-head">
+      <div>
+        <strong style="font-size:18px;">投影片總覽與快速跳頁</strong>
+        <span style="font-size:12.5px;color:#94A3B8;margin-left:10px;">點擊卡片即跳轉至該頁（快捷鍵 G 開關）</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <input type="search" id="grid-filter-input" class="grid-filter-input" placeholder="篩選本簡報關鍵字（例：葡萄乾、耗竭、STOP、心流、山嶽）..." />
+        <button type="button" class="ctrl-btn" id="grid-close">關閉 (Esc)</button>
+      </div>
+    </div>
+    <div class="thumbs-grid" id="thumbs-grid"></div>
+  </div>
+
+  <script src="../assets/js/deck.js"></script>
+</body>
+</html>
